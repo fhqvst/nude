@@ -1,0 +1,140 @@
+@import 'reset';
+
+$primary: #fce473;
+$secondary: #1fc8db;
+$white: #ffffff;
+$off-white: #f6f6f6;
+$light-gray: #eeeeee;
+$black: #000000;
+
+$border-radius: .5rem;
+
+$spacing-sm: .5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Yantramanav';
+  background: $light-gray;
+}
+
+.logotype {
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.navigation {
+    background: $white;
+    height: 6rem;
+}
+
+.navigation + .navigation {
+    background: $off-white;
+    height: 4rem;
+}
+
+.navigation__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.navigation__start,
+.navigation__item,
+.navigation__end {
+    display: flex;
+}
+
+.navigation__link {
+
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 0;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+    background: $off-white;
+    color: $black;
+
+    &:hover {
+        color: initial;
+        background: $primary;
+    }
+
+}
+
+.column {
+    display: flex;
+    flex-grow: 1;
+}
+
+.demo {
+    background: $off-white;
+    border-radius: $border-radius;
+    text-align: center;
+    justify-content: center;
+    padding: $spacing-lg;
+
+    &:nth-child(even) {
+        background: $white;
+    }
+
+}
+
+.button {
+    border: 0;
+    background: $primary;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 $spacing-lg;
+    transition: .25s;
+    &:hover {
+        background: lighten($primary, 25);
+    }
+}
+
+a {
+    color: $primary;
+    transition: .25s;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: .2rem solid;
+    &:hover {
+        color: lighten($primary, 25);
+    }
+}
+
+.header {
+    height: 40rem;
+    background: $white;
+}
+
+.header__inner {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.main {
+    display: block;
+    width: 100%;
+}

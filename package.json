@@ -1,0 +1,51 @@
+{
+  "name": "USERNAME.github.io",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "config": {
+    "src": "src",
+    "dist": "dist",
+    "ghPagesUrl": "https://github.com/USERNAME/USERNAME.github.io.git"
+  },
+  "scripts": {
+    "=========== SCRIPTS =========": "",
+    "scripts": "echo '=> scripts' && mkdir -p dist/assets/js/ && browserify $npm_package_config_src/js/app.js -o $npm_package_config_dist/js/app.js -d",
+    "scripts:minify": "echo '=> scripts:minify' && mkdir -p dist/assets/js/ && browserify $npm_package_config_src/js/app.js | uglifyjs -o $npm_package_config_dist/js/app.min.js",
+    "scripts:watch": "nodemon -q -e js -w $npm_package_config_src/js -x 'npm run scripts -s'",
+    "=========== STYLES ==========": "",
+    "styles": "echo '=> styles' && node-sass $npm_package_config_src/sass/nude.scss $npm_package_config_dist/css/app.css --source-map=true -q",
+    "styles:minify": "echo '=> styles:minify' && node-sass $npm_package_config_src/sass/app.min.scss --source-map=true -q | cleancss -o $npm_package_config_dist/css/app.css",
+    "styles:watch": "nodemon -q -e scss -w $npm_package_config_src/sass -x 'npm run styles'",
+    "=========== ASSETS ==========": "",
+    "images": "echo '=> images' && imagemin -o 3 -i -p $npm_package_config_src/img $npm_package_config_dist/img",
+    "fonts": "echo '=> fonts' && mkdir -p dist/assets/fonts/ && cp -r $npm_package_config_src/fonts/ $npm_package_config_dist/fonts/",
+    "icons": "echo '=> icons' && svgicons2svgfont --fontname=stellicons -o $npm_package_config_dist/fonts/stellicons.svg $npm_package_config_src/icons/*.svg",
+    "=========== GENERAL ===========": "",
+    "build": "npm run scripts && npm run styles && npm run fonts && npm run images",
+    "watch": "livereload & npm run styles:watch",
+    "start": "npm run watch"
+  },
+  "dependencies": {
+    "evil-icons": "^1.8.0",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "clean-css": "^3.1.9",
+    "cp": "^0.2.0",
+    "http-server": "^0.9.0",
+    "imagemin-cli": ">=2.1.0",
+    "livereload": "^0.4.1",
+    "node-sass": "^3.4.2",
+    "nodemon": ">=1.8.1",
+    "svgicons2svgfont": "^5.0.0",
+    "taft": "^0.3.0",
+    "uglifyjs": ">=2.4.10"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
