@@ -1,0 +1,18 @@
+a {
+  color: $primary;
+  transition: .25s;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: .2rem solid;
+  &:hover {
+    color: lighten($primary, 25);
+  }
+}
+
+.is-huge {
+  font-size: 4.0rem;
+}
+
+.is-large {
+  font-size: 3.0rem;
+}

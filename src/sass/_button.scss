@@ -1,0 +1,11 @@
+.button {
+  border: 0;
+  background: $primary;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 $spacing-lg;
+  transition: .25s;
+  &:hover {
+    background: lighten($primary, 25);
+  }
+}

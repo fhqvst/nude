@@ -1,0 +1,19 @@
+.breadcrumbs {
+  display: flex;
+
+}
+
+.breadcrumbs__crumb {
+  align-self: center;
+
+  &:after {
+    display: inline-block;
+    content: '/';
+    padding: 0 $spacing-sm;
+  }
+
+  &:last-child:after {
+    content: none;
+  }
+
+}

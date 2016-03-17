@@ -1,0 +1,18 @@
+.banner {
+  background: $primary;
+  min-height: 48rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.banner__inner {
+  @extend .container;
+  align-self: center;
+  flex-direction: column;
+}
+
+.banner__title
+.banner__text {
+  width: 50%;
+}
