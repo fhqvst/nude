@@ -29,3 +29,10 @@
 .cell.is-shy {
   background: $off-white;
 }
+.is-start {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.is-end {
+  align-self: flex-end;
+}
