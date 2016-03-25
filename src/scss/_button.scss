@@ -1,8 +1,8 @@
 .button {
   border: 0;
   background: $primary;
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
   padding: 0 $spacing-lg;
   transition: background .25s;
   vertical-align: middle;
@@ -20,6 +20,7 @@
   padding: 0 $spacing-xl;
   height: 6rem;
   line-height: 6rem;
+  font-size: 2.0rem;
 }
 .button.is-large {
   padding: 0 $spacing-lg;
@@ -41,21 +42,34 @@
 .button.is-shy {
   background: $light-gray,
 }
+.button.is-outlined {
+  border: .1rem solid $ghost-black;
+  background: transparent;
+}
 .button.is-loading {
   position: relative;
-  font-size: 0;
+  color: transparent;
 
-  &:after {
+  &:before {
     content: '';
-    border: .2rem solid $white;
+    border: .2rem solid $black;
     border-left-color: transparent;
     border-radius: 100%;
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
+    left: calc(50% - .75rem);
+    top: calc(50% - .75rem);
     vertical-align: middle;
+    position: absolute;
     animation: spin .5s infinite linear;
   }
+
+  &:hover {
+    background: $primary;
+    cursor: default;
+  }
+
 }
 .button.is-disabled {
   opacity: .5;
