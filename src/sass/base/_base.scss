@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 1.6rem;
+  background: $light-gray;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit
+}

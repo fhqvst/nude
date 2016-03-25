@@ -4,8 +4,72 @@
   height: 3rem;
   line-height: 3rem;
   padding: 0 $spacing-lg;
-  transition: .25s;
+  transition: background .25s;
+  vertical-align: middle;
+
+  &:focus {
+    outline: .2rem solid blue
+  }
+
   &:hover {
     background: lighten($primary, 25);
+  }
+
+}
+.button.is-huge {
+  padding: 0 $spacing-xl;
+  height: 6rem;
+  line-height: 6rem;
+}
+.button.is-large {
+  padding: 0 $spacing-lg;
+  height: 5rem;
+  line-height: 5rem;
+}
+.button.is-small {
+  padding: 0 $spacing-md;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+.button.is-tiny {
+  padding: 0 $spacing-sm;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.button.is-shy {
+  background: $light-gray,
+}
+.button.is-loading {
+  position: relative;
+  font-size: 0;
+
+  &:after {
+    content: '';
+    border: .2rem solid $white;
+    border-left-color: transparent;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    animation: spin .5s infinite linear;
+  }
+}
+.button.is-disabled {
+  opacity: .5;
+  &:hover {
+    background: $primary;
+    cursor: default;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

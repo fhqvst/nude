@@ -1,6 +1,8 @@
-@import 'reset';
+@import 'base/reset';
 
-@import 'settings';
+@import 'base/settings',
+        'base/base',
+        'base/text';
 
 @import 'grid',
         'typography',
@@ -10,16 +12,6 @@
         'section',
         'navigation',
         'flag';
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: 'Yantramanav';
-  background: $light-gray;
-}
 
 .logotype {
     font-size: 3rem;

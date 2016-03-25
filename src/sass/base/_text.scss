@@ -1,0 +1,24 @@
+.text {
+  display: block;
+}
+
+.text.is-centered {
+  text-align: center;
+}
+
+.text.is-preamble {
+  font-size: 2.0rem;
+}
+
+.text.is-huge {
+  font-size: 4.0rem;
+}
+.text.is-large {
+  font-size: 3.0rem;
+}
+.text.is-small {
+  font-size: 1.4rem;
+}
+.text.is-tiny {
+  font-size: 1.2rem;
+}
