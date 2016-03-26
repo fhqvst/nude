@@ -1,0 +1,21 @@
+.cell:nth-child(even) .demo {
+  background: $white;
+}
+.cell:nth-child(odd) .demo {
+  background: $primary;
+}
+.cell .cell:nth-child(even) .demo {
+  background: $secondary;
+}
+.cell .cell:nth-child(odd) .demo {
+  background: lighten($secondary, 30);
+}
+
+.demo {
+  display: block;
+  border-radius: .5rem;
+  padding: $gutter / 2;
+  text-align: center;
+  margin-bottom: $gutter;
+  color: $ghost-black;
+}

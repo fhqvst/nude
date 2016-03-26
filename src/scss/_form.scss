@@ -43,34 +43,7 @@ select {
     outline: .2rem solid $blue;
   }
 }
-
-textarea {
-  padding-bottom: .6rem;
-  padding-top: .6rem;
-  min-height: 6.5rem;
-}
-
-label,
-legend {
-  font-size: 1.6rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: .5rem;
-}
-
-fieldset {
-  border-width: 0;
-  padding: 0;
-}
-
 input[type='checkbox'],
 input[type='radio'] {
   display: inline;
 }
-
-.label-inline {
-  font-weight: normal;
-  display: inline-block;
-  margin-left: .5rem;
-}
-

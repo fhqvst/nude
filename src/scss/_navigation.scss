@@ -1,10 +1,8 @@
 .navigation {
-  background: $white;
   height: $navigation-height;
 }
 
 .navigation.is-shy {
-  background: $off-white;
   height: $navigation-height * .75;
 }
 
@@ -31,7 +29,6 @@
   border: 0;
   padding-left: $spacing-md;
   padding-right: $spacing-md;
-  background: $off-white;
   color: $black;
 
   &:hover {

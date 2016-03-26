@@ -1,118 +1,76 @@
+// Container
 .container {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-  max-width: 90rem;
+  max-width: $max-width - $gutter;
 }
 
+// Cells
 .cells {
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
-  width: 100%;
+  margin-left: -$gutter / 2;
+  margin-right: -$gutter / 2;
 }
-
-.container > .cells {
-  margin-left: -$spacing-lg;
-  margin-right: -$spacing-lg;
-}
-
-.cell {
-  flex: 1;
-}
-
-.cell {
-  &.is-one,
-  &.is-two,
-  &.is-three,
-  &.is-four,
-  &.is-five,
-  &.is-six,
-  &.is-seven,
-  &.is-eight,
-  &.is-nine,
-  &.is-ten,
-  &.is-eleven,
-  &.is-twelve {
-    flex: none;
+.cells.are-gapped .cell {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  &:first-child {
+    padding-left: 0;
   }
-}
-
-.cell.is-one {
-  width: 1/12 * 100%;
-}
-.cell.is-two {
-  width: 2/12 * 100%;
-}
-.cell.is-three {
-  width: 3/12 * 100%;
-}
-.cell.is-four {
-  width: 4/12 * 100%;
-}
-.cell.is-five {
-  width: 5/12 * 100%;
-}
-.cell.is-six {
-  width: 6/12 * 100%;
-}
-.cell.is-seven {
-  width: 7/12 * 100%;
-}
-.cell.is-eight {
-  width: 8/12 * 100%;
-}
-.cell.is-nine {
-  width: 9/12 * 100%;
-}
-.cell.is-ten {
-  width: 10/12 * 100%;
-}
-.cell.is-eleven {
-  width: 11/12 * 100%;
-}
-.cell.is-twelve {
-  width: 100%;
-}
-
-
-
-.cell.is-bordered {
-  border: .1rem solid $ghost-black;
-  border-left: 0;
-
   &:last-child {
-    border-right: 0;
+    padding-right: 0;
   }
+}
 
+// Cell
+.cell {
+  flex: auto;
 }
-.cell.is-padded {
-  padding: $spacing-lg;
+
+.cell.is-fixed {
+  flex: none;
 }
-.cell.is-boxed {
-  background: $white;
-  padding: $spacing-xl;
+
+// Some calculationz
+$cells: (
+  1: 'is-one',
+  2: 'is-two',
+  3: 'is-three',
+  4: 'is-four',
+  5: 'is-five',
+  6: 'is-six',
+  7: 'is-seven',
+  8: 'is-eight',
+  9: 'is-nine',
+  10: 'is-ten',
+  11: 'is-eleven',
+  12: 'is-twelve'
+);
+
+%no-flex-grow {
+  flex-grow: 0;
 }
-.cell.is-shy {
-  background: $off-white;
+
+// Regular cells
+@each $index, $class in $cells {
+  .cell.#{$class} {
+    @extend %no-flex-grow;
+    width: #{$index * 100% / 12};
+  }
 }
-.cell.is-start {
-  justify-content: flex-start;
+
+// Fixed cells
+@each $index, $class in $cells {
+  .cell.is-fixed.#{$class} {
+    width: #{$index * $max-width / 12};
+  }
 }
-.cell.is-end {
-  justify-content: flex-end;
-}
-.cell.is-center {
-  justify-content: center;
-}
-.cell.is-buffered {
-  margin: $spacing-lg 0;
-}
-.cell.is-column {
-  flex-direction: column;
-}
-.is-section {
-  margin-top: $spacing-lg;
-  margin-bottom: $spacing-lg;
-  padding-top: $spacing-xl;
+
+// Fixed gapped cells
+@each $index, $class in $cells {
+  .cells.are-gapped .cell.is-fixed.#{$class} {
+    width: #{floor($index * $max-width / 12)};
+  }
 }

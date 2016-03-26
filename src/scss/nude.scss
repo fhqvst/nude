@@ -9,21 +9,8 @@
         'field',
         'typography',
         'button',
-        'breadcrumbs',
+        'box',
         'banner',
-        'section',
-        'navigation',
-        'flag';
+        'navigation';
 
-.logotype {
-    font-size: 3rem;
-}
-
-.header {
-    height: 40rem;
-    background: $white;
-}
-
-.header__inner {
-    @extend .container;
-}
+@import 'demo';
