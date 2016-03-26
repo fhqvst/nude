@@ -220,92 +220,98 @@
         <!-- FORMS -->
         <div class="container">
             <div class="cells">
-                <div class="cell is-boxed is-padded">
+                <div class="cell is-twelve">
 
-                    <h2>Forms</h2>
-                    <p>CSS3 introduces a few new units, including the <code>rem</code> unit, which stands for <em>"root em"</em>. The <code>rem</code> unit is relative to the font-size of the root element <code>&lt;html&gt;</code>. That means that we can define a single font size on the root element, and define all <code>rem</code> units to be a percentage of that. The typography has <code>font-size</code> defined in 1.6rem (16px) and <code>line-height</code> in 1.6 (24px). <strong>Milligram</strong> uses the <code>font-family</code> <a target="blank" href="https://www.google.com/fonts/specimen/Roboto" title="Roboto by Christian Robertson">Roboto</a>, created by <u>Christian Robertson</u>, and provided by Google.</p>
-                    <hr>
+                    <div class="box is-gapped">
+                        <h2>Forms</h2>
+                        <p>CSS3 introduces a few new units, including the <code>rem</code> unit, which stands for <em>"root em"</em>. The <code>rem</code> unit is relative to the font-size of the root element <code>&lt;html&gt;</code>. That means that we can define a single font size on the root element, and define all <code>rem</code> units to be a percentage of that. The typography has <code>font-size</code> defined in 1.6rem (16px) and <code>line-height</code> in 1.6 (24px). <strong>Milligram</strong> uses the <code>font-family</code> <a target="blank" href="https://www.google.com/fonts/specimen/Roboto" title="Roboto by Christian Robertson">Roboto</a>, created by <u>Christian Robertson</u>, and provided by Google.</p>
+                        <hr>
 
-                    <form>
+                        <form>
 
-                        <div class="field">
-                            <label class="field__label" for="email">Email address</label>
-                            <p class="field__help" id="emailHelp">We'll never share your email with anyone else.</p>
-                            <input type="email" class="field__input" id="email" placeholder="Enter email" aria-describedby="emailHelp">
-                        </div>
+                            <div class="cells">
+                                <div class="cell is-twelve">
+                                    <div class="field">
+                                        <label class="field__label" for="email">Email address</label>
+                                        <p class="field__help" id="emailHelp">We'll never share your email with anyone else.</p>
+                                        <input type="email" class="field__input" id="email" placeholder="Enter email" aria-describedby="emailHelp">
+                                    </div>
 
-                        <div class="field">
-                            <label class="field__label" for="exampleInputPassword1">Password</label>
-                            <p class="field__help">No, really, we mean it.</p>
-                            <input type="password" class="field__input" id="exampleInputPassword1" placeholder="Password">
-                        </div>
+                                    <div class="field">
+                                        <label class="field__label" for="exampleInputPassword1">Password</label>
+                                        <p class="field__help">No, really, we mean it.</p>
+                                        <input type="password" class="field__input" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
 
-                        <div class="field">
-                            <label class="field__label" for="exampleSelect1">Example select</label>
-                            <div class="field__select">
-                                <select id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
+                                    <div class="field">
+                                        <label class="field__label" for="exampleSelect1">Example select</label>
+                                        <div class="field__select">
+                                            <select id="exampleSelect1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
 
-                        <div class="field">
-                            <label class="field__label" for="exampleSelect2">Example multiple select</label>
-                            <div class="field__multi">
-                                <select multiple id="exampleSelect2">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
+                                    <div class="field">
+                                        <label class="field__label" for="exampleSelect2">Example multiple select</label>
+                                        <div class="field__multi">
+                                            <select multiple id="exampleSelect2">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                        <div class="field">
-                            <label class="field__label" for="exampleTextarea">Example textarea</label>
-                            <textarea class="field__textarea" id="exampleTextarea" rows="3"></textarea>
-                        </div>
-
-                        <div class="cells">
-                            <div class="cell">
-                                <div class="field">
-                                    <label class="field__label" for="exampleInputFile">File input</label>
-                                    <input type="file" class="field__file" id="exampleInputFile">
-                                    <p class="field__help">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</p>
+                                    <div class="field">
+                                        <label class="field__label" for="exampleTextarea">Example textarea</label>
+                                        <textarea class="field__textarea" id="exampleTextarea" rows="3"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cell">
-                                <label class="field__radio">
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Option one is this and that&mdash;be sure to include why it's great
-                                </label>
-                                <label class="field__radio">
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Option two can be something else and selecting it will deselect option one
-                                </label>
-                                <label class="field__radio is-disabled">
-                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Option three is disabled
+
+                            <div class="cells">
+                                <div class="cell is-six">
+                                    <div class="field">
+                                        <label class="field__label" for="exampleInputFile">File input</label>
+                                        <input type="file" class="field__file" id="exampleInputFile">
+                                        <p class="field__help">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</p>
+                                    </div>
+                                </div>
+                                <div class="cell is-six">
+                                    <label class="field__radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                    <label class="field__radio">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Option two can be something else and selecting it will deselect option one
+                                    </label>
+                                    <label class="field__radio is-disabled">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Option three is disabled
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="field">
+                                <label class="field__checkbox">
+                                    <input type="checkbox"> Check me out
                                 </label>
                             </div>
-                        </div>
 
+                            <div class="text is-centered">
+                                <button type="submit" class="button is-large is-center">Submit</button>
+                                <button type="submit" class="button is-center is-shy">Cancel</button>
+                            </div>
 
-                        <div class="field">
-                            <label class="field__checkbox">
-                                <input type="checkbox"> Check me out
-                            </label>
-                        </div>
-
-                        <div class="text is-centered">
-                            <button type="submit" class="button is-large is-center">Submit</button>
-                            <button type="submit" class="button is-center is-shy">Cancel</button>
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
 
                 </div>
             </div>
