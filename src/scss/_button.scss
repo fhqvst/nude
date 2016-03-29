@@ -47,6 +47,16 @@
   background: transparent;
 }
 .button.is-loading {
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   position: relative;
   color: transparent;
 
@@ -71,19 +81,14 @@
   }
 
 }
+.button.is-transparent {
+  background: transparent;
+  border: none;
+}
 .button.is-disabled {
   opacity: .5;
   &:hover {
     background: $primary;
     cursor: default;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

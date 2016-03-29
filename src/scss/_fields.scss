@@ -11,6 +11,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: 'Yantramanav', sans-serif;
 
   &:focus {
     box-shadow: none;
@@ -22,10 +23,40 @@ select {
 .fields {
   margin-bottom: $spacing-lg;
 }
+.fields.are-inline {
+  display: flex;
+  margin-left: -$spacing-md;
+  margin-right: -$spacing-md;
+  align-items: flex-end;
+
+  .field {
+    float: none;
+    padding: 0 $spacing-md;
+  }
+
+  .field__input {
+    margin-bottom: 0;
+  }
+}
+.fields.are-gridded {
+  .field__label {
+    float: none;
+  }
+  .field__input {
+    margin-top: 0;
+    margin-bottom: $spacing-lg;
+  }
+  .field__help {
+    float: none;
+  }
+}
+
+
 .field {
   margin-bottom: $spacing-md;
   float: left;
   width: 100%;
+  position: relative;
   @include clearfix;
 }
 .field__label {
@@ -97,9 +128,24 @@ select {
 
   position: relative;
   display: block;
-  padding-left: 2rem + $spacing-md;
   margin-bottom: $spacing-sm;
   float: left;
+  padding-left: 2rem + $spacing-md;
+
+  input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 12.5%;
+    vertical-align: bottom;
+    width: 2rem;
+    height: 2rem;
+    margin-right:$spacing-md;
+  }
+
+}
+.field__radio.is-custom,
+.field__checkbox.is-custom {
 
   input {
     -webkit-appearance: none;
@@ -107,7 +153,6 @@ select {
     top: 0;
     left: 0;
     outline: 0;
-    width: 2rem;
 
     &:hover {
       cursor: pointer;
@@ -121,7 +166,7 @@ select {
       @include fa-icon('\f10c');
       display: block;
       font-size: 2rem;
-      padding-left: 1px; // Fix
+      padding-left: 1px; // Fix font-awesome alignment
     }
 
     &:checked:after {
@@ -129,12 +174,9 @@ select {
     }
 
   }
-
 }
-
-.field__checkbox input {
+.field__checkbox.is-custom input {
   text-align: left;
-  width: auto;
   &:after {
     content: '\f096'
   }
@@ -142,15 +184,28 @@ select {
     content: '\f046'
   }
 }
-
 .field__help {
   @extend .text.is-shy;
   @extend .text.is-tiny;
   float: right;
   clear: right;
 }
-
+.field__alert {
+  @extend .text.is-tiny;
+  position: absolute;
+  color: $red;
+  font-weight: bold;
+  right: 0;
+}
 .field.is-disabled,
 .field__radio.is-disabled {
   opacity: .5;
+}
+.field__input.is-error,
+.field__textarea.is-error {
+  border-color: $red;
+}
+.field__input.is-success,
+.field__textarea.is-success {
+  border-color: $green;
 }

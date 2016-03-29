@@ -14,6 +14,7 @@ html {box-sizing: border-box;}
 *:after {
 	box-sizing: inherit;
 }
+img {display: block; max-width: 100%}
 img,
 object,
 embed {max-width: 100%;}

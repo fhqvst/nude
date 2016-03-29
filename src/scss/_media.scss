@@ -1,0 +1,30 @@
+.image {
+  display: block;
+  margin: $spacing-xl auto;
+}
+.image.is-left {
+  float: left;
+}
+.image.is-right {
+  float: right;
+}
+
+.figure {
+  padding: $spacing-lg;
+  background: $off-white;
+  margin: $spacing-xl 0;
+}
+
+.figure__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.figure__caption {
+  @extend .text;
+  @extend .is-shy;
+  font-style: italic;
+  text-align: center;
+  padding: $spacing-lg;
+  padding-bottom: 0;
+}
