@@ -204,6 +204,20 @@ select {
   font-weight: bold;
   right: 0;
 }
+.field__alert.is-animated {
+
+  @keyframes appear {
+    0% {
+      transform: translateX(-12.5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  animation: appear .25s ease-in-out;
+}
 .field.is-disabled,
 .field__radio.is-disabled {
   opacity: .5;
