@@ -25,18 +25,25 @@ select {
 }
 .fields.are-inline {
   display: flex;
-  margin-left: -$spacing-md;
-  margin-right: -$spacing-md;
   align-items: flex-end;
+  margin-bottom: 0;
 
   .field {
     float: none;
-    padding: 0 $spacing-md;
   }
 
   .field__input {
     margin-bottom: 0;
   }
+}
+.fields.are-gapped {
+  margin-left: -$spacing-md;
+  margin-right: -$spacing-md;
+
+  .field {
+    padding: 0 $spacing-md;
+  }
+
 }
 .fields.are-gridded {
   .field__label {
