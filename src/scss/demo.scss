@@ -40,3 +40,28 @@
 .whitespace {
   height: 4*$spacing-xl;
 }
+
+.is-nude {
+
+  span {
+    position: relative;
+  }
+
+  span:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    transition: transform .1s;
+    transform: rotate(3deg) scale(1);
+    background: black;
+  }
+
+  &:hover span:after {
+    transform: rotate(-10deg) scale(0);
+  }
+
+}
