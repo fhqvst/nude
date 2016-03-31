@@ -9,6 +9,7 @@
 .navigation__inner {
   @extend .container;
   display: flex;
+  overflow: visible;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -26,14 +27,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-weight: bold;
 
   border: 0;
   padding-left: $spacing-md;
   padding-right: $spacing-md;
   color: $black;
 
+  &.is-active,
   &:hover {
-    color: initial;
+    color: $white;
     background: $primary;
   }
 

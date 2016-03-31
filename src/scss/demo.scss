@@ -19,3 +19,24 @@
   margin-bottom: $gutter;
   color: $ghost-black;
 }
+
+.logotype {
+  height: 3rem;
+}
+
+.is-gapped {
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
+
+.is-primary {
+  color: $primary;
+}
+
+.box {
+  background: $off-white;
+}
+
+.whitespace {
+  height: 4*$spacing-xl;
+}

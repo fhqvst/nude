@@ -1,6 +1,5 @@
 p {
   margin-top: 0;
-  font-weight: 300;
   line-height: 1.5;
 }
 
@@ -56,9 +55,10 @@ a {
   text-decoration: none;
   display: inline-block;
   border-bottom: .2rem solid;
-  &:hover {
-    color: lighten($primary, 25);
-  }
+}
+
+span {
+  font-weight: 300;
 }
 
 hr {
@@ -67,7 +67,9 @@ hr {
 
 pre {
   display: inline-block;
-  background: $ghost-black;
+  background: $off-white;
+  padding: $spacing-lg;
+  font-family: 'Monaco', 'Source Code Pro', 'consolas', monospace;
 }
 
 code {

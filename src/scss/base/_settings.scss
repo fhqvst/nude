@@ -1,15 +1,18 @@
-$primary: #fce473;
-$secondary: #1fc8db;
-$blue: #00f;
-$red: #ED6C63;
-$green: invert(#ED6C63);
-$white: #ffffff;
-$off-white: #f6f6f6;
-$light-gray: #eeeeee;
-$gray: #aaaaaa;
-$dark-gray: #777777;
-$black: #000000;
-$ghost-black: rgba(0, 0, 0, .125);
+$blue:        #00f;
+$red:         #ED6C63;
+$cherry:      #EE5063;
+$pig:         #FF9AA6;
+$green:       #A1CF6F;
+$white:       #ffffff;
+$off-white:   #f6f6f6;
+$light-gray:  #eeeeee;
+$gray:        #aaaaaa;
+$dark-gray:   #777777;
+$black:       #000000;
+$ghost-black: rgba(black, .125);
+
+$primary: $cherry;
+$secondary: $blue;
 
 $border-radius: .5rem;
 

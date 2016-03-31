@@ -1,17 +1,17 @@
 .text {
   display: block;
 }
-.text.is-centered {
+.text.is-center {
   text-align: center;
 }
 .text.is-preamble {
   font-size: 2.0rem;
 }
 .text.is-huge {
-  font-size: 4.0rem;
+  font-size: 5.0rem;
 }
 .text.is-large {
-  font-size: 3.0rem;
+  font-size: 3rem;
 }
 .text.is-small {
   font-size: 1.4rem;
@@ -21,4 +21,7 @@
 }
 .text.is-shy {
   opacity: .5;
+}
+.text.is-bold {
+  font-weight: bold;
 }

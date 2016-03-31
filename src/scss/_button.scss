@@ -1,20 +1,12 @@
 .button {
   border: 0;
+  color: $white;
   background: $primary;
   height: 4rem;
   line-height: 4rem;
   padding: 0 $spacing-lg;
   transition: background .25s;
   vertical-align: middle;
-
-  &:focus {
-    outline: .2rem solid blue
-  }
-
-  &:hover {
-    background: lighten($primary, 25);
-  }
-
 }
 .button.is-huge {
   padding: 0 $spacing-xl;
@@ -40,10 +32,11 @@
   font-size: 1.2rem;
 }
 .button.is-shy {
-  background: $light-gray,
+  background: transparentize($primary, .25);
 }
 .button.is-outlined {
-  border: .1rem solid $ghost-black;
+  border: .1rem solid $primary;
+  color: $primary;
   background: transparent;
 }
 .button.is-loading {
@@ -62,7 +55,7 @@
 
   &:before {
     content: '';
-    border: .2rem solid $black;
+    border: .2rem solid $white;
     border-left-color: transparent;
     border-radius: 100%;
     width: 1.5rem;
@@ -75,20 +68,15 @@
     animation: spin .5s infinite linear;
   }
 
-  &:hover {
-    background: $primary;
-    cursor: default;
-  }
-
 }
 .button.is-transparent {
   background: transparent;
   border: none;
+  color: $primary;
 }
 .button.is-disabled {
   opacity: .5;
   &:hover {
-    background: $primary;
     cursor: default;
   }
 }
