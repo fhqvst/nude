@@ -1,7 +1,3 @@
-.box {
-  background: $white;
-  padding: $spacing-xl;
-}
 .box.is-bordered {
   border: .1rem solid $ghost-black;
 }
@@ -14,7 +10,11 @@
   border-left: none;
 }
 .box.is-gapped {
-  margin-top: $spacing-lg;
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
+.box.is-padded {
+  padding: $spacing-xl;
 }
 .cell:last-child .box.is-gridded {
   border-right: none;

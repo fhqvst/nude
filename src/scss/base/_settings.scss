@@ -1,27 +1,29 @@
-$blue:        #00f;
-$red:         #ED6C63;
-$cherry:      #EE5063;
-$pig:         #FF9AA6;
-$green:       #A1CF6F;
-$white:       #ffffff;
-$off-white:   #f6f6f6;
-$light-gray:  #eeeeee;
-$gray:        #aaaaaa;
-$dark-gray:   #777777;
-$black:       #000000;
-$ghost-black: rgba(black, .125);
+$blue:        #0000ff !default
+$red:         #ED6C63 !default
+$cherry:      #EE5063 !default
+$pig:         #FF9AA6 !default
+$green:       #A1CF6F !default
+$white:       #ffffff !default
+$off-white:   #f6f6f6 !default
+$light-gray:  #eeeeee !default
+$gray:        #aaaaaa !default
+$dark-gray:   #777777 !default
+$black:       #000000 !default
+$ghost-black: rgba(black, .125) !default
 
-$primary: $cherry;
-$secondary: $blue;
+$primary: $cherry !default
+$secondary: $blue !default
 
-$border-radius: .5rem;
+$border-radius: .5rem !default
 
-$spacing-xs: .25rem;
-$spacing-sm: .5rem;
-$spacing-md: 1rem;
-$spacing-lg: 2rem;
-$spacing-xl: 4rem;
+$spacing-xs: .25rem !default
+$spacing-sm: .5rem !default
+$spacing-md: 1rem !default
+$spacing-lg: 2rem !default
+$spacing-xl: 4rem !default
 
-$navigation-height: 6rem;
-$max-width: 96rem;
-$gutter: 2rem;
+$navigation-height: 6rem !default
+$max-width: 104rem !default
+$gutter: 2rem !default
+$font-size: 1.6rem !default;
+$font-family: 'Yantramanav', sans-serif !default;

@@ -12,11 +12,11 @@
   },
   "scripts": {
     "=========== SCRIPTS =========": "",
-    "scripts": "echo '=> scripts' && mkdir -p dist/assets/js/ && browserify $npm_package_config_src/js/app.js -o $npm_package_config_dist/js/app.js -d",
+    "scripts": "echo '=> scripts' && mkdir -p dist/assets/js/ && browserify $npm_package_config_src/js/app.js -o $npm_package_config_dist/assets/js/app.js -d",
     "scripts:minify": "echo '=> scripts:minify' && mkdir -p dist/assets/js/ && browserify $npm_package_config_src/js/app.js | uglifyjs -o $npm_package_config_dist/js/app.min.js",
     "scripts:watch": "nodemon -q -e js -w $npm_package_config_src/js -x 'npm run scripts -s'",
     "=========== STYLES ==========": "",
-    "styles": "echo '=> styles' && node-sass $npm_package_config_src/scss/nude.scss $npm_package_config_dist/css/app.css --source-map=true -q",
+    "styles": "echo '=> styles' && mkdir -p dist/assets/css/ && node-sass $npm_package_config_src/scss/nude.scss $npm_package_config_dist/assets/css/app.css --source-map=true -q",
     "styles:minify": "echo '=> styles:minify' && node-sass $npm_package_config_src/scss/app.min.scss --source-map=true -q | cleancss -o $npm_package_config_dist/css/app.css",
     "styles:watch": "nodemon -q -e scss -w $npm_package_config_src/scss -x 'npm run styles'",
     "=========== ASSETS ==========": "",
@@ -25,7 +25,7 @@
     "icons": "echo '=> icons' && svgicons2svgfont --fontname=stellicons -o $npm_package_config_dist/fonts/stellicons.svg $npm_package_config_src/icons/*.svg",
     "=========== GENERAL ===========": "",
     "build": "npm run scripts && npm run styles && npm run fonts && npm run images",
-    "watch": "livereload & npm run styles:watch",
+    "watch": "livereload & npm run styles:watch & npm run scripts:watch",
     "start": "npm run watch"
   },
   "dependencies": {

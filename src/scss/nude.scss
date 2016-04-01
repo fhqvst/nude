@@ -1,12 +1,11 @@
-@import 'base/reset';
 
 @import 'base/settings',
-        'base/base',
         'base/mixins',
-'text';
+        'base/reset';
 
 @import 'grid',
-'fields',
+        'fields',
+        'text',
         'typography',
         'button',
         'box',
@@ -15,4 +14,8 @@
         'banner',
         'navigation';
 
-@import 'demo';
+
+//////////////////////////////////
+@import 'demo/sidebar',
+        'demo/menu',
+        'demo/demo';

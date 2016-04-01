@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="dist/assets/css/app.css">
+    </head>
+    <body>
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- NAVIGATION -->
+        <div class="navigation">
+            <div class="navigation__inner">
+
+                <div class="navigation__item">
+                    <a href="/" class="text is-bold">NUDE</a>
+                </div>
+
+                <nav class="navigation__item">
+                    <a href="#" class="navigation__link">About</a>
+                    <a href="/documentation.html" class="navigation__link is-active">Documentation</a>
+                    <a href="#" class="navigation__link">Github</a>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- BANNER -->
+        <div class="banner is-half">
+
+            <div class="container">
+
+                <div class="cells are-centered">
+                    <div class="cell is-fixed">
+                        <h1>Documentation</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="cells are-gapped">
+                <div class="cell is-three">
+                    <div class="box is-padded is-gapped is-sticky">
+                        <span class="text is-shy">Navigation</span>
+                        <ul class="menu">
+                            <li>
+                                <a href="#Introduction">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#">Base</a>
+                                <ul>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Mixins</a></li>
+                                    <li><a href="#">Reset</a></li>
+                                    <li><a href="#">Grid</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Content</a>
+                                <ul>
+                                    <li><a href="#">Typography</a></li>
+                                    <li><a href="#">Buttons</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">Tables</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Blocks</a>
+                                <ul>
+                                    <li><a href="#">Text</a></li>
+                                    <li><a href="#">Box</a></li>
+                                    <li><a href="#">Navigation</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell is-nine">
+
+                    <div class="box is-gapped is-transparent">
+                        <h2 id="Introduction">
+                            Introduction
+                        </h2>
+                        <h3>Before you dive in</h3>
+                        <p class="text">
+                            To get the most out of Nude there is one single rule to follow.
+                            Always let state classes describe appearance and never hierarchy.
+                            BEM takes care of the hierarchy, which means state classes like <code>is-primary</code> or <code>is-secondary</code>
+                            will never be needed. Use instead names like <code>is-large</code> or <code>is-shy</code>.
+                        </p>
+                        <h3 class="text is-gapped">When to introduce new blocks</h3>
+                        <p>
+                            The answer to this question lies in two criteria: If the block will be repeated or is heavily styled.
+                            If the new block doesn't fulfill both these criteria, then introducing a new block will only lead to unwanted
+                            complexity. Nude is built with just enough blocks and state classes for these kind of situations.
+                        </p>
+                    </div>
+
+                    <!-- BASE -->
+                    <div class="box is-gapped is-transparent">
+
+                        <h2 id="Base">
+                            Base
+                        </h2>
+                        <p>
+                            The base part of Nude consists of mixins, settings and a reset.
+                        </p>
+
+                    </div>
+                        <div class="cells are-gapped">
+                            <div class="cell is-four">
+                                <h1>Heading 1</h1>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                            <div class="cell is-four">
+                                <h2>Heading 2</h2>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                            <div class="cell is-four">
+                                <h3>Heading 3</h3>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cells are-gapped">
+                            <div class="cell is-four">
+                                <h4>Heading 4</h4>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                            <div class="cell is-four">
+                                <h5>Heading 5</h5>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                            <div class="cell is-four">
+                                <h6>Heading 6</h6>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inquit, dasne adolescenti veniam? Quae qui non vident.
+                                </p>
+                            </div>
+                        </div>
+
+                    <div class="whitespace"></div>
+
+                    <!-- BUTTONS -->
+                        <div class="cells are-centered demo__buttons">
+                            <div class="cell is-four">
+                                <div class="text is-center">
+                                    <button type="button" class="button">.button</button><br>
+                                    <button type="button" class="button is-transparent">.is-transparent</button><br>
+                                    <button type="button" class="button is-disabled">.is-disabled</button>
+                                </div>
+                            </div>
+                            <div class="cell is-four">
+                                <div class="text is-center">
+                                    <button type="button" class="button is-large">.is-large</button><br>
+                                    <button type="button" class="button is-shy">.is-shy</button><br>
+                                    <button type="button" class="button is-small">.is-small</button>
+                                </div>
+                            </div>
+                            <div class="cell is-four">
+                                <div class="text is-center">
+                                    <button type="button" class="button is-loading">.is-loading</button><br>
+                                    <button type="button" class="button"><i class="fa fa-check"></i> .button</button><br>
+                                    <button type="button" class="button is-outlined">.is-outlined</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <div class="whitespace"></div>
+
+                    <!-- FORMS -->
+                        <div class="cells">
+                            <div class="cell is-twelve">
+
+                                <form>
+
+                                    <div class="cells">
+                                        <div class="cell is-twelve">
+
+                                            <div class="cells are-gapped">
+                                                <div class="cell is-six">
+                                                    <div class="field">
+                                                        <label class="field__label" for="email">Email address</label>
+                                                        <p class="field__help" id="emailHelp">No SQL-injections please</p>
+                                                        <input type="email" class="field__input is-success" id="email" placeholder="Enter email" aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="cell is-six">
+                                                    <div class="field">
+                                                        <label class="field__label" for="exampleInputPassword1">Password</label>
+                                                        <p class="field__help">The password is g0atzAreCo0l</p>
+                                                        <input type="password" class="field__input is-error" id="exampleInputPassword1" placeholder="Password">
+                                                        <p class="field__alert is-animated">
+                                                            Whoops! This can't be right
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="field__label" for="exampleSelect1">Example select</label>
+                                                <div class="field__select">
+                                                    <select id="exampleSelect1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="field">
+                                                <label class="field__label" for="exampleSelect2">Example multiple select</label>
+                                                <div class="field__multi">
+                                                    <select multiple id="exampleSelect2">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="field__label" for="exampleTextarea">Example textarea</label>
+                                                <textarea class="field__textarea" id="exampleTextarea" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cells">
+                                        <div class="cell is-six">
+                                            <div class="field">
+                                                <label class="field__label" for="exampleInputFile">File input</label>
+                                                <input type="file" class="field__file" id="exampleInputFile">
+                                                <p class="field__help">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</p>
+                                            </div>
+                                        </div>
+                                        <div class="cell is-six">
+                                            <label class="field__radio">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Option one is this and that&mdash;be sure to include why it's great
+                                            </label>
+                                            <label class="field__radio is-custom">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Option two can be something else and selecting it will deselect option one
+                                            </label>
+                                            <label class="field__radio is-disabled">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Option three is disabled
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="cells">
+                                        <div class="cell is-twelve">
+                                            <div class="field">
+                                                <label class="field__checkbox is-custom">
+                                                    <input type="checkbox">Check me out
+                                                </label>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field__checkbox is-error">
+                                                    <input type="checkbox">Don't check me out
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cells">
+                                        <div class="cell is-twelve">
+                                            <div class="text is-centered">
+                                                <button type="submit" class="button is-large">Submit</button>
+                                                <button type="submit" class="button is-shy">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="whitespace"></div>
+
+                                <form>
+
+                                    <div class="cells">
+                                        <div class="cell is-twelve">
+                                            <div class="fields are-inline are-gapped">
+
+                                                <div class="field">
+                                                    <label class="field__label" for="exampleInputUsername2">Username</label>
+                                                    <p class="field__help">Use your username or email.</p>
+                                                    <input type="password" class="field__input" id="exampleInputUsername2" placeholder="Username">
+                                                </div>
+
+                                                <div class="field">
+                                                    <label class="field__label" for="exampleInputPassword2">Password</label>
+                                                    <p class="field__help">Fill out your super-secret password.</p>
+                                                    <input type="password" class="field__input" id="exampleInputPassword2" placeholder="Password">
+                                                </div>
+
+                                                <div class="field">
+                                                    <button type="submit" class="button">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="whitespace"></div>
+
+                                <form>
+
+                                    <div class="cells">
+                                        <div class="cell is-twelve">
+                                            <div class="fields are-gridded">
+
+                                                <div class="cells">
+
+                                                    <div class="cell is-three">
+                                                        <label class="field__label" for="exampleInputUsername3">Username</label>
+                                                        <p class="field__help">Use your username or email.</p>
+                                                    </div>
+                                                    <div class="cell">
+                                                        <input type="password" class="field__input" id="exampleInputUsername3" placeholder="Username">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cells">
+
+                                                    <div class="cell is-three">
+                                                        <label class="field__label" for="exampleInputPassword3">Password</label>
+                                                        <p class="field__help">Fill out your super-secret password.</p>
+                                                    </div>
+                                                    <div class="cell">
+                                                        <input type="password" class="field__input" id="exampleInputPassword3" placeholder="Password">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="cells">
+                                                    <div class="cell is-three"></div>
+                                                    <div class="cell">
+                                                        <button type="submit" class="button">Submit</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    <!-- IMAGES -->
+                        <div class="cells">
+                            <div class="cell is-twelve">
+
+                                <div class="box is-padded is-gapped">
+
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                        montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                                        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                                        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac.
+                                    </p>
+
+                                    <!--<img src="http://placehold.it/640x480" alt="" class="image">-->
+
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                        montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                                        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                                        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac.
+                                    </p>
+
+                                    <figure class="figure">
+                                        <!--<img src="http://placehold.it/640x480" alt="" class="figure__image">-->
+                                        <figcaption class="figure__caption">This is a figcaption</figcaption>
+                                    </figure>
+
+                                    <!--<img src="http://placehold.it/640x480" alt="" class="image">-->
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="cells">
+                            <div class="cell is-twelve">
+
+                                <div class="box is-padded is-gapped">
+
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Language <i class="fa fa-caret-up"></i></th>
+                                            <th>Difficulty</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Swedish</td>
+                                            <td>Hard</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Finnish</td>
+                                            <td>Medium</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Fortran</td>
+                                            <td>Easy</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <hr>
+
+
+                                    <table class="table is-small">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th class="is-descending">Language</th>
+                                            <th>Difficulty</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Swedish</td>
+                                            <td>Hard</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Finnish</td>
+                                            <td>Medium</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Fortran</td>
+                                            <td>Easy</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/dist/assets/js/app.js"></script>
+    </body>
+</html>

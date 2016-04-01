@@ -5,13 +5,13 @@
   text-align: center;
 }
 .text.is-preamble {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
 }
 .text.is-huge {
   font-size: 5.0rem;
 }
 .text.is-large {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 .text.is-small {
   font-size: 1.4rem;
@@ -24,4 +24,7 @@
 }
 .text.is-bold {
   font-weight: bold;
+}
+.text.is-gapped {
+  margin-top: $spacing-lg;
 }

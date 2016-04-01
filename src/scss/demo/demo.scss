@@ -24,10 +24,6 @@
   height: 3rem;
 }
 
-.is-gapped {
-  margin-top: $spacing-xl;
-  margin-bottom: $spacing-xl;
-}
 
 .is-primary {
   color: $primary;
@@ -38,15 +34,25 @@
 }
 
 .whitespace {
-  height: 4*$spacing-xl;
+  height: 2*$spacing-xl;
+}
+
+.is-whitespaced {
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-xl;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  &[id]:before {
+    content: '#';
+    color: $primary;
+  }
 }
 
 .is-nude {
-
   span {
     position: relative;
   }
-
   span:after {
     position: absolute;
     content: '';
@@ -65,8 +71,11 @@
   }
 
 }
-.demo__buttons {
-  .button {
-    margin-bottom: $spacing-xl;
-  }
+
+.is-stuck {
+  position: fixed;
+}
+
+.is-highlighted {
+  color: $primary;
 }
