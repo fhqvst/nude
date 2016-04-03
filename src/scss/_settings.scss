@@ -6,7 +6,7 @@ $green:       #A1CF6F !default
 $white:       #ffffff !default
 $off-white:   #f6f6f6 !default
 $light-gray:  #eeeeee !default
-$gray:        #aaaaaa !default
+$gray:        #cccccc !default
 $dark-gray:   #777777 !default
 $black:       #000000 !default
 $ghost-black: rgba(black, .125) !default
@@ -16,14 +16,15 @@ $secondary: $blue !default
 
 $border-radius: .5rem !default
 
-$spacing-xs: .25rem !default
-$spacing-sm: .5rem !default
-$spacing-md: 1rem !default
-$spacing-lg: 2rem !default
-$spacing-xl: 4rem !default
+$spacing: 1rem;
+$spacing-xs: .25 * $spacing !default
+$spacing-sm: .5 * $spacing !default
+$spacing-md: $spacing !default
+$spacing-lg: 2 * $spacing !default
+$spacing-xl: 4 * $spacing !default
 
 $navigation-height: 6rem !default
-$max-width: 104rem !default
+$max-width: 120rem !default
 $gutter: 2rem !default
 $font-size: 1.6rem !default;
 $font-family: 'Yantramanav', sans-serif !default;

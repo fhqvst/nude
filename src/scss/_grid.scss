@@ -9,7 +9,7 @@
 .cells {
   display: flex;
   flex-grow: 1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: -$gutter / 2;
   margin-right: -$gutter / 2;
 
@@ -22,6 +22,9 @@
 .cells.are-gapped {
   margin-top: $gutter;
   margin-bottom: $gutter;
+}
+.cells.are-sparse {
+  justify-content: space-between;
 }
 .cells.are-gapped .cell {
   padding-left: $gutter / 2;

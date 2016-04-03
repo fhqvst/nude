@@ -1,12 +1,14 @@
 .image {
   display: block;
-  margin: $spacing-xl auto;
 }
 .image.is-left {
   float: left;
 }
 .image.is-right {
   float: right;
+}
+.image.is-circle {
+  border-radius: 50%;
 }
 
 .figure {

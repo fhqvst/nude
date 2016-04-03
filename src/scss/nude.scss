@@ -1,7 +1,7 @@
 
-@import 'base/settings',
-        'base/mixins',
-        'base/reset';
+@import 'settings',
+'mixins',
+'reset';
 
 @import 'grid',
         'fields',
@@ -19,3 +19,6 @@
 @import 'demo/sidebar',
         'demo/menu',
         'demo/demo';
+
+///////////////////
+@import 'showtic/showtic';

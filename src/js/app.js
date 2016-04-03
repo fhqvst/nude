@@ -33,6 +33,10 @@ $('document').ready(function() {
             }
 
         });
+
+        $(window).on('resize', function() {
+            unstickyCss.width = $element.css('width');
+        });
     });
 
 });
