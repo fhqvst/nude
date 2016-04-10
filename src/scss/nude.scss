@@ -1,24 +1,13 @@
-
 @import 'settings',
 'mixins',
-'reset';
-
-@import 'grid',
-        'fields',
-        'text',
-        'typography',
-        'button',
-        'box',
-        'media',
-        'table',
-        'banner',
-        'navigation';
-
-
-//////////////////////////////////
-@import 'demo/sidebar',
-        'demo/menu',
-        'demo/demo';
-
-///////////////////
-@import 'showtic/showtic';
+'reset',
+'grid',
+'fields',
+'text',
+'typography',
+'button',
+'box',
+'media',
+'table',
+'banner',
+'navigation';

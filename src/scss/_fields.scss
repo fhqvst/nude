@@ -35,6 +35,11 @@ select {
   .field__input {
     margin-bottom: 0;
   }
+
+  @include media($small) {
+    flex-wrap: wrap;
+  }
+
 }
 .fields.are-gapped {
   margin-left: -$spacing-md;

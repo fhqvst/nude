@@ -10,8 +10,18 @@
   display: flex;
   flex-grow: 1;
   flex-wrap: nowrap;
-  margin-left: -$gutter / 2;
-  margin-right: -$gutter / 2;
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
+
+  @include media($tiny) {
+    flex-wrap: wrap;
+  }
+
+}
+.cells.are-gapped {
+  margin: $gutter -$gutter/2;
+  padding-left: 0;
+  padding-right: 0;
 
   .cells {
     margin-left: 0;
@@ -19,12 +29,25 @@
   }
 
 }
-.cells.are-gapped {
-  margin-top: $gutter;
-  margin-bottom: $gutter;
+.cells.are-gridded {
+  flex-wrap: wrap;
+
+  .cell {
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+    margin-bottom: $gutter / 2;
+    @include media($tiny) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
 }
 .cells.are-sparse {
   justify-content: space-between;
+}
+.cells.are-bottom {
+  align-items: flex-end;
 }
 .cells.are-gapped .cell {
   padding-left: $gutter / 2;
@@ -35,14 +58,27 @@
   &:last-child {
     padding-right: 0;
   }
+  @include media($tiny) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .cells.are-centered {
   justify-content: center;
+}
+.cells.are-end {
+  justify-content: flex-end;
+}
+.cells.are-start {
+  justify-content: flex-start;
 }
 
 // Cell
 .cell {
   flex: auto;
+  @include media($tiny) {
+    width: 100%;
+  }
 }
 
 .cell.is-fixed {
@@ -74,6 +110,9 @@ $cells: (
   .cell.#{$class} {
     @extend %no-flex-grow;
     width: #{$index * 100% / 12};
+    @include media($tiny) {
+      width: 100%;
+    }
   }
 }
 
@@ -81,6 +120,9 @@ $cells: (
 @each $index, $class in $cells {
   .cell.is-fixed.#{$class} {
     width: #{$index * $max-width / 12};
+    @include media($tiny) {
+      width: 100%;
+    }
   }
 }
 
@@ -88,5 +130,8 @@ $cells: (
 @each $index, $class in $cells {
   .cells.are-gapped .cell.is-fixed.#{$class} {
     width: #{floor($index * $max-width / 12)};
+    @include media($tiny) {
+      width: 100%;
+    }
   }
 }

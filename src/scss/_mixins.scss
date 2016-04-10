@@ -20,3 +20,9 @@
     clear: both;
   }
 }
+
+@mixin media($query) {
+  @media only screen and ($query) {
+    @content;
+  }
+}

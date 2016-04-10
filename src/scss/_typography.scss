@@ -49,9 +49,7 @@ h6 {
 a {
   color: $primary;
   transition: .25s;
-  text-decoration: none;
   display: inline-block;
-  border-bottom: .2rem solid;
 }
 
 span {
@@ -59,7 +57,7 @@ span {
 }
 
 hr {
-  border-top: .1rem solid $ghost-black;
+  border-top: .1rem solid;
 }
 
 pre {
