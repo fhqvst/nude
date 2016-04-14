@@ -79,3 +79,21 @@ h1,h2,h3,h4,h5,h6 {
 .is-highlighted {
   color: $primary;
 }
+
+.navigation {
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+}
+.navigation__inner {
+  border-bottom: .1rem solid $ghost-black;
+  max-width: $max-width;
+  position: relative;
+  margin: 0 auto;
+}
+body {
+  padding-top: $navigation-height;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "USERNAME.github.io",
+  "name": "nude",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -7,8 +7,7 @@
   },
   "config": {
     "src": "src",
-    "dist": "dist",
-    "ghPagesUrl": "https://github.com/USERNAME/USERNAME.github.io.git"
+    "dist": "dist"
   },
   "scripts": {
     "=========== SCRIPTS =========": "",
@@ -42,10 +41,13 @@
     "node-sass": "^3.4.2",
     "nodemon": ">=1.8.1",
     "svgicons2svgfont": "^5.0.0",
-    "taft": "^0.3.0",
     "uglifyjs": ">=2.4.10"
   },
   "engines": {
     "node": ">=4.0.0"
-  }
+  },
+  "description": "A front-end framework based on Flexbox, Sass and the good ol' package.json",
+  "main": "index.js",
+  "author": "Filip Hallqvist <filiphallqvist@gmail.com>",
+  "license": "ISC"
 }
