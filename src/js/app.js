@@ -5,7 +5,7 @@ $('document').ready(function() {
     $('.is-sticky').each(function (index, element) {
 
         var $element = $(element),
-            offset = 40,
+            offset = 80,
             elementOffset = $element.offset(),
             stickyCss = {
                 top: offset,
