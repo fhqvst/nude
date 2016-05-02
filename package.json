@@ -1,6 +1,6 @@
 {
-  "name": "nude",
-  "version": "0.0.1",
+  "name": "nude-css",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": ""
@@ -27,10 +27,6 @@
     "watch": "livereload & npm run styles:watch & npm run scripts:watch",
     "start": "npm run watch"
   },
-  "dependencies": {
-    "evil-icons": "^1.8.0",
-    "jquery": "^2.2.0"
-  },
   "devDependencies": {
     "browserify": "^9.0.7",
     "clean-css": "^3.1.9",
@@ -47,7 +43,7 @@
     "node": ">=4.0.0"
   },
   "description": "A front-end framework based on Flexbox, Sass and the good ol' package.json",
-  "main": "index.js",
+  "main": "nude.css",
   "author": "Filip Hallqvist <filiphallqvist@gmail.com>",
   "license": "ISC"
 }
