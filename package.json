@@ -14,8 +14,8 @@
   "devDependencies": {
     "http-server": "^0.9.0",
     "livereload": "^0.4.1",
-    "node-sass": "^3.4.2",
-    "nodemon": ">=1.8.1"
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.11.0"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -23,11 +23,5 @@
   "description": "A CSS framework built with speed and ease-of-use in mind",
   "main": "nude.css",
   "author": "Filip Hallqvist <filiphallqvist@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "http-server": "^0.9.0",
-    "livereload": "^0.4.1",
-    "node-sass": "^3.10.1",
-    "nodemon": "^1.11.0"
-  }
+  "license": "MIT"
 }
