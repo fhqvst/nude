@@ -725,7 +725,7 @@ h6 {
   line-height: 1.4; }
 
 a {
-  color: #ED6C63;
+  color: #EE5063;
   transition: .25s;
   display: inline-block; }
 
@@ -763,7 +763,7 @@ blockquote {
 .button {
   border: 0;
   color: #ffffff;
-  background: #ED6C63;
+  background: #EE5063;
   height: 4rem;
   line-height: 4rem;
   padding: 0 2rem;
@@ -794,11 +794,11 @@ blockquote {
   font-size: 1.2rem; }
 
 .button.is-shy, .button.figure__caption {
-  background: rgba(237, 108, 99, 0.75); }
+  background: rgba(238, 80, 99, 0.75); }
 
 .button.is-outlined {
-  border: 0.1rem solid #ED6C63;
-  color: #ED6C63;
+  border: 0.1rem solid #EE5063;
+  color: #EE5063;
   background: transparent; }
 
 .button.is-loading {
@@ -827,7 +827,7 @@ blockquote {
 .button.is-transparent {
   background: transparent;
   border: none;
-  color: #ED6C63; }
+  color: #EE5063; }
 
 .button.is-disabled {
   opacity: .5; }
@@ -982,76 +982,10 @@ blockquote {
   color: #000000; }
   .navigation__link.is-active, .navigation__link:hover {
     color: #ffffff;
-    background: #ED6C63; }
+    background: #EE5063; }
 
 .navigation__form {
   height: 100%; }
 
 .navigation__button {
   height: 100%; }
-
-.cell:nth-child(even) .demo {
-  background: #ffffff; }
-
-.cell:nth-child(odd) .demo {
-  background: #ED6C63; }
-
-.cell .cell:nth-child(even) .demo {
-  background: #0000ff; }
-
-.cell .cell:nth-child(odd) .demo {
-  background: #9999ff; }
-
-.demo {
-  display: block;
-  border-radius: .5rem;
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: rgba(0, 0, 0, 0.125); }
-
-.logotype {
-  height: 3rem; }
-
-.is-primary {
-  color: #ED6C63; }
-
-.box {
-  background: #f6f6f6; }
-
-.whitespace {
-  height: 8rem; }
-
-.is-whitespaced {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
-
-h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
-  content: '#';
-  color: #ED6C63; }
-
-.is-nude span {
-  position: relative; }
-
-.is-nude span:after {
-  position: absolute;
-  content: '';
-  display: block;
-  top: 20%;
-  left: 0;
-  right: 0;
-  bottom: 20%;
-  transition: transform .1s;
-  transform: rotate(3deg) scale(1);
-  background: black; }
-
-.is-nude:hover span:after {
-  transform: rotate(-10deg) scale(0); }
-
-.is-stuck {
-  position: fixed; }
-
-.is-highlighted {
-  color: #ED6C63; }
-
-/*# sourceMappingURL=app.css.map */

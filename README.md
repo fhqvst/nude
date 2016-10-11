@@ -1,3 +1,3 @@
-![Logotype](https://www.dropbox.com/s/x8e1piejgzb9mzj/nude-small.png?raw=1)
+![Logotype]([https://github.com/fhqvst/nude/blob/master/nude.png|width=415)
 ---
-A front-end framework based on Flexbox, Sass and the good ol' package.json
+A CSS framework built with speed and ease-of-use in mind
