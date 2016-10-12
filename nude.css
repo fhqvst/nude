@@ -161,288 +161,288 @@ body {
   width: 100%;
   max-width: 118rem; }
 
-.cells {
+.columns {
   display: flex;
   flex-grow: 1;
   flex-wrap: nowrap;
   padding-left: 1rem;
   padding-right: 1rem; }
   @media only screen and (max-width: 767px) {
-    .cells {
+    .columns {
       flex-wrap: wrap; } }
 
-.cells.are-gapped {
+.columns.are-gapped {
   margin: 1rem;
   padding-left: 0;
   padding-right: 0; }
-  .cells.are-gapped .cells {
+  .columns.are-gapped .columns {
     margin-left: 0;
     margin-right: 0; }
 
-.cells.are-gridded {
+.columns.are-gridded {
   flex-wrap: wrap; }
-  .cells.are-gridded .cell {
+  .columns.are-gridded .column {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 1rem; }
     @media only screen and (max-width: 767px) {
-      .cells.are-gridded .cell {
+      .columns.are-gridded .column {
         padding-left: 0;
         padding-right: 0; } }
 
-.cells.are-sparse {
+.columns.are-sparse {
   justify-content: space-between; }
 
-.cells.are-bottom {
+.columns.are-bottom {
   align-items: flex-end; }
 
-.cells.are-gapped .cell {
+.columns.are-gapped .column {
   padding-left: 1rem;
   padding-right: 1rem; }
-  .cells.are-gapped .cell:first-child {
+  .columns.are-gapped .column:first-child {
     padding-left: 0; }
-  .cells.are-gapped .cell:last-child {
+  .columns.are-gapped .column:last-child {
     padding-right: 0; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell {
+    .columns.are-gapped .column {
       padding-left: 0;
       padding-right: 0; } }
 
-.cells.are-centered {
+.columns.are-centered {
   justify-content: center; }
 
-.cells.are-end {
+.columns.are-end {
   justify-content: flex-end; }
 
-.cells.are-start {
+.columns.are-start {
   justify-content: flex-start; }
 
-.cell {
+.column {
   flex: auto; }
   @media only screen and (max-width: 767px) {
-    .cell {
+    .column {
       width: 100%; } }
 
-.cell.is-fixed {
+.column.is-fixed {
   flex: none; }
 
-.cell.is-one, .cell.is-two, .cell.is-three, .cell.is-four, .cell.is-five, .cell.is-six, .cell.is-seven, .cell.is-eight, .cell.is-nine, .cell.is-ten, .cell.is-eleven, .cell.is-twelve {
+.column.is-one, .column.is-two, .column.is-three, .column.is-four, .column.is-five, .column.is-six, .column.is-seven, .column.is-eight, .column.is-nine, .column.is-ten, .column.is-eleven, .column.is-twelve {
   flex-grow: 0; }
 
-.cell.is-one {
+.column.is-one {
   width: 8.33333%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-one {
+    .column.is-one {
       width: 100%; } }
 
-.cell.is-two {
+.column.is-two {
   width: 16.66667%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-two {
+    .column.is-two {
       width: 100%; } }
 
-.cell.is-three {
+.column.is-three {
   width: 25%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-three {
+    .column.is-three {
       width: 100%; } }
 
-.cell.is-four {
+.column.is-four {
   width: 33.33333%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-four {
+    .column.is-four {
       width: 100%; } }
 
-.cell.is-five {
+.column.is-five {
   width: 41.66667%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-five {
+    .column.is-five {
       width: 100%; } }
 
-.cell.is-six {
+.column.is-six {
   width: 50%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-six {
+    .column.is-six {
       width: 100%; } }
 
-.cell.is-seven {
+.column.is-seven {
   width: 58.33333%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-seven {
+    .column.is-seven {
       width: 100%; } }
 
-.cell.is-eight {
+.column.is-eight {
   width: 66.66667%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-eight {
+    .column.is-eight {
       width: 100%; } }
 
-.cell.is-nine {
+.column.is-nine {
   width: 75%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-nine {
+    .column.is-nine {
       width: 100%; } }
 
-.cell.is-ten {
+.column.is-ten {
   width: 83.33333%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-ten {
+    .column.is-ten {
       width: 100%; } }
 
-.cell.is-eleven {
+.column.is-eleven {
   width: 91.66667%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-eleven {
+    .column.is-eleven {
       width: 100%; } }
 
-.cell.is-twelve {
+.column.is-twelve {
   width: 100%; }
   @media only screen and (max-width: 767px) {
-    .cell.is-twelve {
+    .column.is-twelve {
       width: 100%; } }
 
-.cell.is-fixed.is-one {
+.column.is-fixed.is-one {
   width: 10rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-one {
+    .column.is-fixed.is-one {
       width: 100%; } }
 
-.cell.is-fixed.is-two {
+.column.is-fixed.is-two {
   width: 20rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-two {
+    .column.is-fixed.is-two {
       width: 100%; } }
 
-.cell.is-fixed.is-three {
+.column.is-fixed.is-three {
   width: 30rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-three {
+    .column.is-fixed.is-three {
       width: 100%; } }
 
-.cell.is-fixed.is-four {
+.column.is-fixed.is-four {
   width: 40rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-four {
+    .column.is-fixed.is-four {
       width: 100%; } }
 
-.cell.is-fixed.is-five {
+.column.is-fixed.is-five {
   width: 50rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-five {
+    .column.is-fixed.is-five {
       width: 100%; } }
 
-.cell.is-fixed.is-six {
+.column.is-fixed.is-six {
   width: 60rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-six {
+    .column.is-fixed.is-six {
       width: 100%; } }
 
-.cell.is-fixed.is-seven {
+.column.is-fixed.is-seven {
   width: 70rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-seven {
+    .column.is-fixed.is-seven {
       width: 100%; } }
 
-.cell.is-fixed.is-eight {
+.column.is-fixed.is-eight {
   width: 80rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-eight {
+    .column.is-fixed.is-eight {
       width: 100%; } }
 
-.cell.is-fixed.is-nine {
+.column.is-fixed.is-nine {
   width: 90rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-nine {
+    .column.is-fixed.is-nine {
       width: 100%; } }
 
-.cell.is-fixed.is-ten {
+.column.is-fixed.is-ten {
   width: 100rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-ten {
+    .column.is-fixed.is-ten {
       width: 100%; } }
 
-.cell.is-fixed.is-eleven {
+.column.is-fixed.is-eleven {
   width: 110rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-eleven {
+    .column.is-fixed.is-eleven {
       width: 100%; } }
 
-.cell.is-fixed.is-twelve {
+.column.is-fixed.is-twelve {
   width: 120rem; }
   @media only screen and (max-width: 767px) {
-    .cell.is-fixed.is-twelve {
+    .column.is-fixed.is-twelve {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-one {
+.columns.are-gapped .column.is-fixed.is-one {
   width: 10rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-one {
+    .columns.are-gapped .column.is-fixed.is-one {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-two {
+.columns.are-gapped .column.is-fixed.is-two {
   width: 20rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-two {
+    .columns.are-gapped .column.is-fixed.is-two {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-three {
+.columns.are-gapped .column.is-fixed.is-three {
   width: 30rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-three {
+    .columns.are-gapped .column.is-fixed.is-three {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-four {
+.columns.are-gapped .column.is-fixed.is-four {
   width: 40rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-four {
+    .columns.are-gapped .column.is-fixed.is-four {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-five {
+.columns.are-gapped .column.is-fixed.is-five {
   width: 50rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-five {
+    .columns.are-gapped .column.is-fixed.is-five {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-six {
+.columns.are-gapped .column.is-fixed.is-six {
   width: 60rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-six {
+    .columns.are-gapped .column.is-fixed.is-six {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-seven {
+.columns.are-gapped .column.is-fixed.is-seven {
   width: 70rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-seven {
+    .columns.are-gapped .column.is-fixed.is-seven {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-eight {
+.columns.are-gapped .column.is-fixed.is-eight {
   width: 80rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-eight {
+    .columns.are-gapped .column.is-fixed.is-eight {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-nine {
+.columns.are-gapped .column.is-fixed.is-nine {
   width: 90rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-nine {
+    .columns.are-gapped .column.is-fixed.is-nine {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-ten {
+.columns.are-gapped .column.is-fixed.is-ten {
   width: 100rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-ten {
+    .columns.are-gapped .column.is-fixed.is-ten {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-eleven {
+.columns.are-gapped .column.is-fixed.is-eleven {
   width: 110rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-eleven {
+    .columns.are-gapped .column.is-fixed.is-eleven {
       width: 100%; } }
 
-.cells.are-gapped .cell.is-fixed.is-twelve {
+.columns.are-gapped .column.is-fixed.is-twelve {
   width: 120rem; }
   @media only screen and (max-width: 767px) {
-    .cells.are-gapped .cell.is-fixed.is-twelve {
+    .columns.are-gapped .column.is-fixed.is-twelve {
       width: 100%; } }
 
 input[type='email'],
@@ -830,7 +830,7 @@ blockquote {
 .box.is-padded {
   padding: 4rem; }
 
-.cell:last-child .box.is-gridded {
+.column:last-child .box.is-gridded {
   border-right: none; }
 
 .image {

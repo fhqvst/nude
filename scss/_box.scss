@@ -16,6 +16,6 @@
 .box.is-padded {
   padding: $spacing-xl;
 }
-.cell:last-child .box.is-gridded {
+.column:last-child .box.is-gridded {
   border-right: none;
 }

@@ -5,8 +5,8 @@
   max-width: $max-width - $gutter;
 }
 
-// Cells
-.cells {
+// columns
+.columns {
   display: flex;
   flex-grow: 1;
   flex-wrap: nowrap;
@@ -18,21 +18,21 @@
   }
 
 }
-.cells.are-gapped {
+.columns.are-gapped {
   margin: $gutter -$gutter/2;
   padding-left: 0;
   padding-right: 0;
 
-  .cells {
+  .columns {
     margin-left: 0;
     margin-right: 0;
   }
 
 }
-.cells.are-gridded {
+.columns.are-gridded {
   flex-wrap: wrap;
 
-  .cell {
+  .column {
     padding-left: $gutter / 2;
     padding-right: $gutter / 2;
     margin-bottom: $gutter / 2;
@@ -43,13 +43,13 @@
   }
 
 }
-.cells.are-sparse {
+.columns.are-sparse {
   justify-content: space-between;
 }
-.cells.are-bottom {
+.columns.are-bottom {
   align-items: flex-end;
 }
-.cells.are-gapped .cell {
+.columns.are-gapped .column {
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
   &:first-child {
@@ -63,30 +63,30 @@
     padding-right: 0;
   }
 }
-.cells.are-centered {
+.columns.are-centered {
   justify-content: center;
 }
-.cells.are-end {
+.columns.are-end {
   justify-content: flex-end;
 }
-.cells.are-start {
+.columns.are-start {
   justify-content: flex-start;
 }
 
-// Cell
-.cell {
+// column
+.column {
   flex: auto;
   @include media($tiny) {
     width: 100%;
   }
 }
 
-.cell.is-fixed {
+.column.is-fixed {
   flex: none;
 }
 
 // Some calculationz
-$cells: (
+$columns: (
   1: 'is-one',
   2: 'is-two',
   3: 'is-three',
@@ -105,9 +105,9 @@ $cells: (
   flex-grow: 0;
 }
 
-// Regular cells
-@each $index, $class in $cells {
-  .cell.#{$class} {
+// Regular columns
+@each $index, $class in $columns {
+  .column.#{$class} {
     @extend %no-flex-grow;
     width: #{$index * 100% / 12};
     @include media($tiny) {
@@ -116,9 +116,9 @@ $cells: (
   }
 }
 
-// Fixed cells
-@each $index, $class in $cells {
-  .cell.is-fixed.#{$class} {
+// Fixed columns
+@each $index, $class in $columns {
+  .column.is-fixed.#{$class} {
     width: #{$index * $max-width / 12};
     @include media($tiny) {
       width: 100%;
@@ -126,9 +126,9 @@ $cells: (
   }
 }
 
-// Fixed gapped cells
-@each $index, $class in $cells {
-  .cells.are-gapped .cell.is-fixed.#{$class} {
+// Fixed gapped columns
+@each $index, $class in $columns {
+  .columns.are-gapped .column.is-fixed.#{$class} {
     width: #{floor($index * $max-width / 12)};
     @include media($tiny) {
       width: 100%;
