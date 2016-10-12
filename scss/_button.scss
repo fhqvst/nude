@@ -5,9 +5,16 @@
   height: 4rem;
   line-height: 4rem;
   padding: 0 2 * $spacing;
-  transition: background .25s;
+  transition: background .25s, transform .25s;
   vertical-align: middle;
   border-radius: $border-radius;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: $font-family;
 }
 .button.is-huge {
   padding: 0 3 * $spacing;
@@ -24,7 +31,7 @@
   padding: 0 $spacing;
   height: 3rem;
   line-height: 3rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .button.is-tiny {
   padding: 0 .5 * $spacing;
@@ -80,4 +87,10 @@
   &:hover {
     cursor: default;
   }
+  &:active {
+    transform: none;
+  }
+}
+.button:active {
+  transform: scale(.95);
 }

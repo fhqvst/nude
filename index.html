@@ -1,61 +1,501 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Nude</title>
+	<title>Nude &ndash; A remarkably fashionable SCSS framework based on flexbox and good intentions</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="nude.css">
 	<style type="text/css">
-		body {
-			background: salmon;
+		.container {
+			max-width: 96rem;
 		}
+		.demo {
+			border-radius: .5rem;
+			background: #F6F6F6;
+			padding: 2rem;
+			margin: 2rem auto;
+		}
+		.logo {
+			font-family: 'Sail', cursive;
+			display: inline-block;
+			line-height: 1;
+			color: #86DFE8;
+			transition: .25s ease-out;
+			position: fixed;
+			top: 8rem;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: 20;
+			font-size: 20rem;
+		}
+		.logo:hover:after {
+			transform: translateY(3%);
+		}
+		.logo:hover {
+			transform: translate(-50%, -1.5%) scale(1);
+		}
+		.logo:after {
+			color: #EE5063;
+			transition: .25s ease-out;
+			display: block;
+			content: 'nude';
+			position: absolute;
+			left: 1%;
+			right: -1%;
+			top: 2%;
+			height: 55%;
+			overflow: hidden;
+			z-index: 4;
+			opacity: .9;
+		}
+		.logo.is-top {
+			top: 0;
+			transform: translate(-50%, -35%) scale(.25);
+		}
+		.npm {
+			font-size: 2rem;
+			display: inline-block;
+			border: none;
+			margin: 2rem 6rem;
+		}
+		.demo:before {
+			content: 'DEMO';
+			display: block;
+			text-transform: uppercase;
+			font-weight: bold;
+			opacity: .5;
+			margin-bottom: 3rem;
+			padding-bottom: 1rem;
+			border-bottom: .1rem solid rgba(0, 0, 0, .125);
+		}
+		.navbar {
+			background: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			transition: .25s;
+			z-index: 10;
+			height: 6rem;
+		}
+		.navbar.is-opaque {
+			background: white;
+		}
+		.navigation__link:hover {
+			color: #EE5063;
+			background: transparent;
+		}
+		.banner {
+			text-align: center;
+			padding: 20rem 2rem 6rem;
+		}
+		.note {
+			font-size: 1.6rem;
+		}
+		.content {
+			text-transform: uppercase;
+			text-align: center;
+			padding: 1rem 0;
+			max-width: 100%;
+			overflow: hidden;
+			color: white;
+			border-radius: .25rem;
+			display: block;
+			font-size: 1.2rem;
+			font-weight: bold;
+			letter-spacing: .05em;
+		}
+		.column:nth-child(odd) .content { background: rgba(0, 0, 0, .125) }
+		.column:nth-child(even) .content { background: #EE5063 }
 	</style>
+	<link href="https://fonts.googleapis.com/css?family=Sail" rel="stylesheet">
 </head>
 <body>
 
-<div class="box">
+<div class="navbar"></div>
+
+<div class="box banner">
 	<div class="container">
-		<div class="columns">
-			<div class="column">
-				Hello World!
-			</div>
-			<div class="column">
-				<div class="navigation">
-					<div class="navigation__inner">
-						<div class="navigation__item">
-							Top
-						</div>
-						<div class="navigation__item">
-							<a href="" class="navigation__link">
-								kek
-							</a>
-						</div>
-						<div class="navigation__item">
-							<a href="" class="navigation__link">
-								kek
-							</a>
-						</div>
-					</div>
+		<div class="box is-gapped is-padded">
+			<h1 class="logo" id="logo">nude</h1>
+			<pre class="npm">npm install nude</pre><br>
+			<button class="button is-large">
+				Read more
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="box is-gapped is-padded">
+		<h2>Under-what?</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>Get Started</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<h3>
+			Install with npm
+		</h3>
+		<p>
+			Install using npm.
+		</p>
+		<pre>$ npm install nude</pre>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Typography
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<h1>Heading 1 <span class="note"><code>&lt;h1&gt;</code> 4.0rem (40px)</span></h1>
+		<h2>Heading 2 <span class="note"><code>&lt;h2&gt;</code> 3.2rem (32px)</span></h2>
+		<h3>Heading 3 <span class="note"><code>&lt;h3&gt;</code> 2.4rem (24px)</span></h3>
+		<h4>Heading 4 <span class="note"><code>&lt;h4&gt;</code> 2.0rem (20px)</span></h4>
+		<h5>Heading 5 <span class="note"><code>&lt;h5&gt;</code> 1.8rem (18px)</span></h5>
+		<h6>Heading 6 <span class="note"><code>&lt;h6&gt;</code> 1.6rem (16px)</span></h6>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Blockquotes
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<blockquote>
+			Hey, what's up?
+		</blockquote>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Buttons
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<div class="demo">
+			<button class="button">Button</button>
+			<button class="button is-disabled">Button</button>
+			<button class="button is-large">Button</button>
+			<button class="button is-small">Button</button>
+			<button class="button is-outlined">Button</button>
+			<button class="button is-loading">Button</button>
+			<button class="button is-transparent">Button</button>
+		</div>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Lists
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<div class="demo">
+			<ul>
+				<li>
+					One
+					<ul>
+						<li>Two</li>
+						<li>Three</li>
+					</ul>
+				</li>
+				<li>Four</li>
+			</ul>
+			<ol>
+				<li>
+					One
+					<ol>
+						<li>Two</li>
+						<li>Three</li>
+					</ol>
+				</li>
+				<li>Four</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Tables
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<div class="demo">
+			<table class="table">
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Height</th>
+					<th>Location</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Stephen Curry</td>
+					<td>27</td>
+					<td>1,91</td>
+					<td>Akron, OH</td>
+				</tr>
+				<tr>
+					<td>Klay Thompson</td>
+					<td>25</td>
+					<td>2,01</td>
+					<td>Los Angeles, CA</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="box is-gapped is-padded">
+		<h2>
+			Grid
+		</h2>
+		<p>
+			Hoc enim identidem dicitis, non intellegere nos quam dicatis voluptatem. Velut ego nunc moveor. Nihil opus est exemplis hoc facere longius. Nondum autem explanatum satis, erat, quid maxime natura vellet. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Qui convenit? Miserum hominem! Si dolor summum malum est, dici aliter non potest. Quae diligentissime contra Aristonem dicuntur a Chryippo. Si verbum sequimur, primum longius verbum praepositum quam bonum.
+		</p>
+		<h3>
+			Ungapped columns
+		</h3>
+
+		<div class="demo">
+			<div class="columns">
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
-<div class="box">
-	<div class="container">
-		<div class="columns">
-			<div class="column">
-				Test
-			</div>
-			<div class="column">
-				Test 2
+		<h3>
+			Gapped columns
+		</h3>
+		<div class="demo">
+			<div class="columns are-gapped">
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
+				<div class="column">
+					<span class="content">
+						.column
+					</span>
+				</div>
 			</div>
 		</div>
+
+		<h3>
+			Gridded columns
+		</h3>
+		<div class="demo">
+			<div class="columns are-gridded">
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="demo">
+			<div class="columns are-gridded are-gapped">
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+				<div class="column is-three">
+					<span class="content">
+						.column.is-three
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<h3>
+			Nesting
+		</h3>
+
+		<div class="demo">
+			<div class="columns are-gapped">
+				<div class="column is-six">
+					<div class="columns are-gapped">
+						<div class="column is-three">
+					<span class="content">
+						.column
+					</span>
+						</div>
+						<div class="column is-three">
+					<span class="content">
+						.column
+					</span>
+						</div>
+						<div class="column is-three">
+					<span class="content">
+						.column
+					</span>
+						</div>
+						<div class="column is-three">
+					<span class="content">
+						.column
+					</span>
+						</div>
+					</div>
+				</div>
+				<div class="column is-six">
+					<span class="content">
+						.column.is-six
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="demo">
+			<div class="columns">
+				<div class="column is-six">
+					<div class="columns">
+						<div class="column">
+							<span class="content">
+								.column
+							</span>
+						</div>
+						<div class="column">
+							<span class="content">
+								.column
+							</span>
+						</div>
+						<div class="column">
+							<span class="content">
+								.column
+							</span>
+						</div>
+						<div class="column">
+							<span class="content">
+								.column
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="column is-six">
+					<span class="content">
+						.column.is-six
+					</span>
+				</div>
+			</div>
+		</div>
+
 	</div>
+
+	<div class="box is-gapped is-padded">
+		<p class="text is-centered is-shy">
+			<span class="mark">nude</span> is licensed under MIT.
+		</p>
+	</div>
+
 </div>
 
+<script type="text/javascript">
+	var navbar = document.getElementById("logo");
+
+	function navbarClasses() {
+		if(window.scrollY > 0) {
+			if(navbar.className.indexOf("is-top") === -1) {
+				navbar.className += " is-top";
+			}
+		} else {
+			navbar.className = "logo"
+		}
+	}
+
+	window.addEventListener('scroll', navbarClasses);
+	window.addEventListener('load', navbarClasses);
+
+</script>
 </body>
 </html>

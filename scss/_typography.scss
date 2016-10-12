@@ -48,8 +48,9 @@ h6 {
 
 a {
   color: $primary;
-  transition: .25s;
+  transition: .15s ease-in-out;
   display: inline-block;
+  outline: none;
 }
 
 span {

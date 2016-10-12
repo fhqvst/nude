@@ -147,11 +147,8 @@ input[type=button] {
   clear: both; }
 
 body {
-  font-family: "Yantramanav", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.6rem; }
-
-:focus {
-  outline: .1rem dotted black; }
 
 .is-margin-one {
   margin: 1rem; }
@@ -799,8 +796,9 @@ h6 {
 
 a {
   color: #EE5063;
-  transition: .25s;
-  display: inline-block; }
+  transition: .15s ease-in-out;
+  display: inline-block;
+  outline: none; }
 
 span {
   font-weight: 300; }
@@ -853,9 +851,16 @@ ol ol {
   height: 4rem;
   line-height: 4rem;
   padding: 0 2rem;
-  transition: background .25s;
+  transition: background .25s, transform .25s;
   vertical-align: middle;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .button.is-huge {
   padding: 0 3rem;
@@ -872,7 +877,7 @@ ol ol {
   padding: 0 1rem;
   height: 3rem;
   line-height: 3rem;
-  font-size: 1.4rem; }
+  font-size: 1rem; }
 
 .button.is-tiny {
   padding: 0 0.5rem;
@@ -920,6 +925,11 @@ ol ol {
   opacity: .5; }
   .button.is-disabled:hover {
     cursor: default; }
+  .button.is-disabled:active {
+    transform: none; }
+
+.button:active {
+  transform: scale(0.95); }
 
 .box.is-bordered {
   border: 0.1rem solid rgba(0, 0, 0, 0.125); }
@@ -997,6 +1007,7 @@ ol ol {
   justify-content: center;
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
   border: 0;
   padding-left: 1rem;
   padding-right: 1rem;
