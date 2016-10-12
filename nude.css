@@ -156,6 +156,96 @@ body {
 :focus {
   outline: .1rem dotted black; }
 
+.m-one {
+  margin: 1rem; }
+
+.m-t-one {
+  margin-top: 1rem; }
+
+.m-r-one {
+  margin-right: 1rem; }
+
+.m-b-one {
+  margin-bottom: 1rem; }
+
+.m-l-one {
+  margin-left: 1rem; }
+
+.m-two {
+  margin: 2rem; }
+
+.m-t-two {
+  margin-top: 2rem; }
+
+.m-r-two {
+  margin-right: 2rem; }
+
+.m-b-two {
+  margin-bottom: 2rem; }
+
+.m-l-two {
+  margin-left: 2rem; }
+
+.m-three {
+  margin: 3rem; }
+
+.m-t-three {
+  margin-top: 3rem; }
+
+.m-r-three {
+  margin-right: 3rem; }
+
+.m-b-three {
+  margin-bottom: 3rem; }
+
+.m-l-three {
+  margin-left: 3rem; }
+
+.p-one {
+  padding: 1rem; }
+
+.p-t-one {
+  padding-top: 1rem; }
+
+.p-r-one {
+  padding-right: 1rem; }
+
+.p-b-one {
+  padding-bottom: 1rem; }
+
+.p-l-one {
+  padding-left: 1rem; }
+
+.p-two {
+  padding: 2rem; }
+
+.p-t-two {
+  padding-top: 2rem; }
+
+.p-r-two {
+  padding-right: 2rem; }
+
+.p-b-two {
+  padding-bottom: 2rem; }
+
+.p-l-two {
+  padding-left: 2rem; }
+
+.p-three {
+  padding: 3rem; }
+
+.p-t-three {
+  padding-top: 3rem; }
+
+.p-r-three {
+  padding-right: 3rem; }
+
+.p-b-three {
+  padding-bottom: 3rem; }
+
+.p-l-three {
+  padding-left: 3rem; }
+
 .container {
   margin: 0 auto;
   width: 100%;

@@ -1,14 +1,22 @@
 $sizes: (
-  'one',
-  'two',
-  'three'
+  'one': 1,
+  'two': 2,
+  'three': 3
 );
 
 $properties: (
   'm': 'margin',
-  'mt': 'margin-top',
-  'mr': 'margin-right',
-  'mb': 'margin-bottom',
-  'ml': 'margin-left',
   'p': 'padding'
-)
+);
+
+@each $abbr, $prop in $properties {
+  @each $size, $multiplier in $sizes {
+
+    .#{$abbr}-#{$size}    {#{$prop}:        #{$spacing * $multiplier} }
+    .#{$abbr}-t-#{$size}  {#{$prop}-top:    #{$spacing * $multiplier} }
+    .#{$abbr}-r-#{$size}  {#{$prop}-right:  #{$spacing * $multiplier} }
+    .#{$abbr}-b-#{$size}  {#{$prop}-bottom: #{$spacing * $multiplier} }
+    .#{$abbr}-l-#{$size}  {#{$prop}-left:   #{$spacing * $multiplier} }
+
+  }
+}
