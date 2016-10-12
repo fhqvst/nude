@@ -4,8 +4,12 @@
   overflow-x: scroll;
 
   th, td {
-    border: .1rem solid $light-gray;
-    padding: $spacing-md;
+    padding: $spacing;
+  }
+
+  td {
+    border-top: .1rem solid $light-gray;
+    border-bottom: .1rem solid $light-gray;
   }
 
   tbody tr:hover {
@@ -13,22 +17,11 @@
   }
 
 }
-.table .is-ascending {
-  &:after {
-    margin-left: $spacing-sm;
-    //@include fa-icon('\f0d8');
-  }
-}
-.table .is-descending {
-  &:after {
-    margin-left: $spacing-sm;
-    //@include fa-icon('\f0d7');
-  }
-}
+
 .table.is-transparent {
   border: none;
 
-  th, td {
+  td {
     border: none;
   }
 
@@ -40,6 +33,6 @@
   font-size: 1.4rem;
 
   th, td {
-    padding: $spacing-xs $spacing-sm;
+    padding: .25 * $spacing .5 * $spacing;
   }
 }

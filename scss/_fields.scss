@@ -21,7 +21,7 @@ select {
 }
 
 .fields {
-  margin-bottom: $spacing-lg;
+  margin-bottom: 2 * $spacing;
 }
 .fields.are-inline {
   display: flex;
@@ -36,17 +36,17 @@ select {
     margin-bottom: 0;
   }
 
-  @include media($small) {
+  @include media($bp-sm) {
     flex-wrap: wrap;
   }
 
 }
 .fields.are-gapped {
-  margin-left: -$spacing-md;
-  margin-right: -$spacing-md;
+  margin-left: -$spacing;
+  margin-right: -$spacing;
 
   .field {
-    padding: 0 $spacing-md;
+    padding: 0 $spacing;
   }
 
 }
@@ -56,7 +56,7 @@ select {
   }
   .field__input {
     margin-top: 0;
-    margin-bottom: $spacing-lg;
+    margin-bottom: 2 * $spacing;
   }
   .field__help {
     float: none;
@@ -65,7 +65,7 @@ select {
 
 
 .field {
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing;
   float: left;
   width: 100%;
   position: relative;
@@ -78,8 +78,8 @@ select {
   border: .1rem solid $ghost-black;
   height: 4rem;
   width: 100%;
-  padding: 0 $spacing-md;
-  margin: $spacing-sm 0;
+  padding: 0 $spacing;
+  margin: .5 * $spacing 0;
   clear: both;
 }
 .field__select {
@@ -89,13 +89,13 @@ select {
 
   &:after {
     position: absolute;
-    right: $spacing-md;
+    right: $spacing;
     top: 50%;
     transform: translateY(-50%);
   }
 
   select {
-    padding: 0 $spacing-md;
+    padding: 0 $spacing;
     width: 100%;
     height: 100%;
   }
@@ -112,7 +112,7 @@ select {
     height: 100%;
   }
   option {
-    padding: $spacing-sm $spacing-md;
+    padding: .5 * $spacing $spacing;
     ::selection {
       background: red !important;
     }
@@ -129,7 +129,7 @@ select {
 
 .field__textarea {
   @extend .field__input;
-  padding: $spacing-md;
+  padding: $spacing;
   height: 10rem;
   resize: vertical;
 }
@@ -139,9 +139,9 @@ select {
 
   position: relative;
   display: block;
-  margin-bottom: $spacing-sm;
+  margin-bottom: .5 * $spacing;
   float: left;
-  padding-left: 2rem + $spacing-md;
+  padding-left: 2rem + $spacing;
 
   input {
     display: block;
@@ -151,7 +151,7 @@ select {
     vertical-align: bottom;
     width: 2rem;
     height: 2rem;
-    margin-right:$spacing-md;
+    margin-right: $spacing;
   }
 
 }

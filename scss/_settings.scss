@@ -15,14 +15,9 @@ $ghost-white: rgba(white, .125) !default;
 $primary: $cherry !default;
 $secondary: $blue !default;
 
-$border-radius: .5rem !default;
+$border-radius: .25rem !default;
 
 $spacing: 1rem !default;
-$spacing-xs: .25 * $spacing !default;
-$spacing-sm: .5 * $spacing !default;
-$spacing-md: $spacing !default;
-$spacing-lg: 2 * $spacing !default;
-$spacing-xl: 4 * $spacing !default;
 
 $navigation-height: 6rem !default;
 $max-width: 120rem !default;
@@ -30,7 +25,7 @@ $gutter: 2rem !default;
 $font-size: 1.6rem !default;
 $font-family: 'Yantramanav', sans-serif !default;
 
-$tiny: "max-width: 767px";
-$small: "max-width: 991px";
-$medium: "max-width: 1199px";
-$large: "max-width: 1200px";
+$bp-xs: "max-width: 767px";
+$bp-sm: "max-width: 991px";
+$bp-md: "max-width: 1199px";
+$bp-lg: "max-width: 1200px";

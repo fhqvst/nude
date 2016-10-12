@@ -4,29 +4,30 @@
   background: $primary;
   height: 4rem;
   line-height: 4rem;
-  padding: 0 $spacing-lg;
+  padding: 0 2 * $spacing;
   transition: background .25s;
   vertical-align: middle;
+  border-radius: $border-radius;
 }
 .button.is-huge {
-  padding: 0 $spacing-xl;
+  padding: 0 3 * $spacing;
   height: 6rem;
   line-height: 6rem;
   font-size: 2.0rem;
 }
 .button.is-large {
-  padding: 0 $spacing-lg;
+  padding: 0 2 * $spacing;
   height: 5rem;
   line-height: 5rem;
 }
 .button.is-small {
-  padding: 0 $spacing-md;
+  padding: 0 $spacing;
   height: 3rem;
   line-height: 3rem;
   font-size: 1.4rem;
 }
 .button.is-tiny {
-  padding: 0 $spacing-sm;
+  padding: 0 .5 * $spacing;
   height: 2rem;
   line-height: 2rem;
   font-size: 1.2rem;

@@ -11,7 +11,7 @@ h5,
 h6,
 p {
   font-weight: 300;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing;
   margin-top: 0;
   letter-spacing: .01em;
 }
@@ -63,16 +63,18 @@ hr {
 pre {
   display: block;
   background: $off-white;
-  padding: $spacing-lg;
+  padding: 2 * $spacing;
   font-family: 'Monaco', 'Source Code Pro', 'consolas', monospace;
   line-height: 1.6;
   white-space: pre-wrap;
+  border-left: .25rem solid $primary;
 }
 
 code {
   display: inline-block;
   background: $off-white;
   border-radius: $border-radius;
+  padding: .25 * $spacing .5 * $spacing;
 }
 
 pre,
@@ -84,10 +86,26 @@ blockquote {
   border-left: 0.4rem solid $off-white;
   margin-left: 0;
   margin-right: 0;
-  padding: $spacing-md $spacing-lg;
+  padding: $spacing 2 * $spacing;
 
   & *:last-child {
     margin: 0;
   }
 
+}
+
+ul, ol, dl {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+  list-style-position: inside;
+
+  & & {
+    margin-left: $spacing;
+    margin-top: 0;
+  }
+
+}
+
+ol ol {
+  list-style-type: lower-alpha;
 }

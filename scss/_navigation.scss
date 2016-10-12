@@ -1,17 +1,25 @@
 .navigation {
   height: $navigation-height;
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  justify-content: inherit;
 }
 
 .navigation.is-shy {
   height: $navigation-height * .75;
 }
 
-.navigation__inner {
-  display: flex;
-  overflow: visible;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
+.navigation.is-left {
+  justify-content: flex-start;
+}
+
+.navigation.is-right {
+  justify-content: flex-end;
+}
+
+.navigation.is-centered {
+  justify-content: space-around;
 }
 
 .navigation__item {
@@ -29,8 +37,8 @@
   font-weight: bold;
 
   border: 0;
-  padding-left: $spacing-md;
-  padding-right: $spacing-md;
+  padding-left: $spacing;
+  padding-right: $spacing;
   color: $black;
 
   &.is-active,
@@ -39,12 +47,4 @@
     background: $primary;
   }
 
-}
-
-.navigation__form {
-  height: 100%;
-}
-
-.navigation__button {
-  height: 100%;
 }

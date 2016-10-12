@@ -13,15 +13,14 @@
   padding-left: $gutter/2;
   padding-right: $gutter/2;
 
-  @include media($tiny) {
+  @include media($bp-xs) {
     flex-wrap: wrap;
   }
 
 }
 .columns.are-gapped {
-  margin: $gutter -$gutter/2;
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: -$gutter/2;
+  margin-right: -$gutter/2;
 
   .columns {
     margin-left: 0;
@@ -31,34 +30,44 @@
 }
 .columns.are-gridded {
   flex-wrap: wrap;
+}
 
-  .column {
+.columns.are-gridded.are-gapped {
+
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  .column,
+  .column:first-child,
+  .column:last-child {
+    box-sizing: border-box;
     padding-left: $gutter / 2;
     padding-right: $gutter / 2;
     margin-bottom: $gutter / 2;
-    @include media($tiny) {
+
+    @include media($bp-xs) {
       padding-left: 0;
       padding-right: 0;
     }
   }
+}
 
+.columns .columns {
+  padding-left: 0;
+  padding-right: 0;
 }
-.columns.are-sparse {
-  justify-content: space-between;
-}
+
 .columns.are-bottom {
   align-items: flex-end;
 }
 .columns.are-gapped .column {
+  box-sizing: content-box;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
-  &:first-child {
-    padding-left: 0;
-  }
-  &:last-child {
-    padding-right: 0;
-  }
-  @include media($tiny) {
+
+  @include media($bp-xs) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -76,7 +85,7 @@
 // column
 .column {
   flex: auto;
-  @include media($tiny) {
+  @include media($bp-xs) {
     width: 100%;
   }
 }
@@ -110,7 +119,7 @@ $columns: (
   .column.#{$class} {
     @extend %no-flex-grow;
     width: #{$index * 100% / 12};
-    @include media($tiny) {
+    @include media($bp-xs) {
       width: 100%;
     }
   }
@@ -120,7 +129,7 @@ $columns: (
 @each $index, $class in $columns {
   .column.is-fixed.#{$class} {
     width: #{$index * $max-width / 12};
-    @include media($tiny) {
+    @include media($bp-xs) {
       width: 100%;
     }
   }
@@ -130,7 +139,7 @@ $columns: (
 @each $index, $class in $columns {
   .columns.are-gapped .column.is-fixed.#{$class} {
     width: #{floor($index * $max-width / 12)};
-    @include media($tiny) {
+    @include media($bp-xs) {
       width: 100%;
     }
   }

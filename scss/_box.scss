@@ -10,11 +10,11 @@
   border-left: none;
 }
 .box.is-gapped {
-  margin-top: $spacing-xl;
-  margin-bottom: $spacing-xl;
+  margin-top: 3 * $spacing;
+  margin-bottom: 3 * $spacing;
 }
 .box.is-padded {
-  padding: $spacing-xl;
+  padding: 3 * $spacing;
 }
 .column:last-child .box.is-gridded {
   border-right: none;

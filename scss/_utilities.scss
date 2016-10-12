@@ -5,18 +5,18 @@ $sizes: (
 );
 
 $properties: (
-  'm': 'margin',
-  'p': 'padding'
+  'margin',
+  'padding'
 );
 
-@each $abbr, $prop in $properties {
+@each $property in $properties {
   @each $size, $multiplier in $sizes {
 
-    .#{$abbr}-#{$size}    {#{$prop}:        #{$spacing * $multiplier} }
-    .#{$abbr}-t-#{$size}  {#{$prop}-top:    #{$spacing * $multiplier} }
-    .#{$abbr}-r-#{$size}  {#{$prop}-right:  #{$spacing * $multiplier} }
-    .#{$abbr}-b-#{$size}  {#{$prop}-bottom: #{$spacing * $multiplier} }
-    .#{$abbr}-l-#{$size}  {#{$prop}-left:   #{$spacing * $multiplier} }
+    .is-#{$property}-#{$size}    {#{$property}:        #{$spacing * $multiplier} }
+    .is-#{$property}-top-#{$size}  {#{$property}-top:    #{$spacing * $multiplier} }
+    .is-#{$property}-right-#{$size}  {#{$property}-right:  #{$spacing * $multiplier} }
+    .is-#{$property}-bottom-#{$size}  {#{$property}-bottom: #{$spacing * $multiplier} }
+    .is-#{$property}-left-#{$size}  {#{$property}-left:   #{$spacing * $multiplier} }
 
   }
 }
