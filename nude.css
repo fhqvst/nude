@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, button, input, textarea, keygen, select {
   margin: 0;
   padding: 0;
@@ -533,14 +532,7 @@ select {
     position: absolute;
     right: 1rem;
     top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: ""; }
+    transform: translateY(-50%); }
   .field__select select {
     padding: 0 1rem;
     width: 100%;
@@ -600,26 +592,12 @@ select {
     color: #0000ff; }
   .field__radio.is-custom input:after,
   .field__checkbox.is-custom input:after {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "";
     display: block;
     font-size: 2rem;
     padding-left: 1px; }
-  .field__radio.is-custom input:checked:after,
-  .field__checkbox.is-custom input:checked:after {
-    content: '\f192'; }
 
 .field__checkbox.is-custom input {
   text-align: left; }
-  .field__checkbox.is-custom input:after {
-    content: '\f096'; }
-  .field__checkbox.is-custom input:checked:after {
-    content: '\f046'; }
 
 .field__help {
   float: right;
@@ -897,24 +875,10 @@ blockquote {
     background: #f6f6f6; }
 
 .table .is-ascending:after {
-  margin-left: 0.5rem;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: ""; }
+  margin-left: 0.5rem; }
 
 .table .is-descending:after {
-  margin-left: 0.5rem;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: ""; }
+  margin-left: 0.5rem; }
 
 .table.is-transparent {
   border: none; }

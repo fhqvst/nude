@@ -16,13 +16,13 @@
 .table .is-ascending {
   &:after {
     margin-left: $spacing-sm;
-    @include fa-icon('\f0d8');
+    //@include fa-icon('\f0d8');
   }
 }
 .table .is-descending {
   &:after {
     margin-left: $spacing-sm;
-    @include fa-icon('\f0d7');
+    //@include fa-icon('\f0d7');
   }
 }
 .table.is-transparent {

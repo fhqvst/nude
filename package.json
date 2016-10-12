@@ -8,7 +8,7 @@
   "scripts": {
     "styles": "echo '=> styles' && node-sass -q scss/nude.scss -o .",
     "styles:watch": "nodemon -q -e scss -w scss -x 'npm run styles'",
-    "watch": "livereload & npm run styles:watch",
+    "watch": "http-server & livereload & npm run styles:watch",
     "start": "npm run watch"
   },
   "devDependencies": {

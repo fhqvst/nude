@@ -92,7 +92,6 @@ select {
     right: $spacing-md;
     top: 50%;
     transform: translateY(-50%);
-    @include fa-icon('\f0d7');
   }
 
   select {
@@ -175,14 +174,13 @@ select {
     }
 
     &:after {
-      @include fa-icon('\f10c');
       display: block;
       font-size: 2rem;
       padding-left: 1px; // Fix font-awesome alignment
     }
 
     &:checked:after {
-      content: '\f192'
+      //content: '\f192'
     }
 
   }
@@ -190,10 +188,10 @@ select {
 .field__checkbox.is-custom input {
   text-align: left;
   &:after {
-    content: '\f096'
+    //content: '\f096'
   }
   &:checked:after {
-    content: '\f046'
+    //content: '\f046'
   }
 }
 .field__help {
