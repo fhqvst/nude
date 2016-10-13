@@ -1,9 +1,9 @@
 {
-  "name": "nude-css",
-  "version": "0.0.3",
+  "name": "nude-scss",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "http://fhqvst.github.io/nude/"
   },
   "scripts": {
     "styles": "echo '=> styles' && node-sass -q scss/nude.scss -o . && cleancss nude.css -o nude.min.css",
@@ -21,8 +21,8 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "description": "A CSS framework built with speed and ease-of-use in mind",
-  "main": "nude.css",
+  "description": "A remarkably fashionable SCSS framework based on flexbox and good intentions",
+  "main": "scss/nude.scss",
   "author": "Filip Hallqvist <filiphallqvist@gmail.com>",
   "license": "MIT"
 }
