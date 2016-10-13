@@ -6,12 +6,13 @@
     "url": ""
   },
   "scripts": {
-    "styles": "echo '=> styles' && node-sass -q scss/nude.scss -o .",
+    "styles": "echo '=> styles' && node-sass -q scss/nude.scss -o . && cleancss nude.css -o nude.min.css",
     "styles:watch": "nodemon -q -e scss -w scss -x 'npm run styles'",
     "watch": "http-server & livereload & npm run styles:watch",
     "start": "npm run watch"
   },
   "devDependencies": {
+    "clean-css": "^3.4.20",
     "http-server": "^0.9.0",
     "livereload": "^0.4.1",
     "node-sass": "^3.10.1",
